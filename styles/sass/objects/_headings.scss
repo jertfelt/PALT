@@ -1,95 +1,90 @@
 //Header sizes Unna typeface
-.header--xl{
-  font-family: $headerfont;
-  font-size:72px;
-  line-height: 1.2rem;
-}
-.header--l{
-  font-family: $headerfont;
-  font-size: 54px;
-  line-height: 1.2rem;
-}
-.header--m{
-  font-family: $headerfont;
-  font-sisze: 48px;
-  line-height: 1.2rem;
-}
-.header--s{
-  font-family: $headerfont;
-  font-size: 36px;
-  line-height: 1.2rem;
-}
-.header--xs{
-  font-family: $headerfont;
-  font-size: 1.6rem;
-  line-height: 1.4rem;
-}
-.header--xxs{
-  font-family: $headerfont;
-  font-size: 1rem;
-  line-height: 1.2rem;
-};
+.header {
+  &--xl {
+    @include font-size(72);
+    font-family: $headerfont;
+    line-height: 1.2rem;
+  }
 
+  &--l {
+    @include font-size(54);
+    font-family: $headerfont;
+    line-height: 1.2rem;
+  }
+  &--m {
+    @include font-size(48);
+    font-family: $headerfont;
+    line-height: 1.2rem;
+  }
+  &--s {
+    @include font-size(36);
+    font-family: $headerfont;
+    line-height: 1.2rem;
+  }
+
+  &--xs {
+    @include font-size(24);
+    font-family: $headerfont;
+    line-height: 1.4rem;
+  }
+  &--xxs {
+    @include font-size(16);
+    font-family: $headerfont;
+    line-height: 1.2rem;
+  }
+}
 
 //primary font in different sizes:
+.primary {
+  font-family: $primaryfont;
 
-.primary--xl{
-  font-family: $primaryfont;
-  font-size: 64px;
-  line-height: 1.2rem;
-}
-
-.primary--l{
-  font-family: $primaryfont;
-  font-size: 50px;
-  line-height: 1.2rem;
-}
-
-.primary--m{
-  font-family: $primaryfont;
-  font-size: 44px;
-  line-height: 1.2rem;
-}
-
-.primary--s{
-  font-family: $primaryfont;
-  font-size: 36px;
-  line-height: 1.2rem;
-}
-
-.primary--xs{
-  font-family: $primaryfont;
-  font-size: 1.8rem;
-  line-height: 1.8rem;
-}
-.primary--xxs{
-  font-family: $primaryfont;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  &--xl {
+    @include font-size(64);
+    line-height: 1.2rem;
+  }
+  &--l {
+    @include font-size(50);
+    line-height: 1.2rem;
+  }
+  &--m {
+    font-size: 44px;
+    line-height: 1.2rem;
+  }
+  &--s {
+    @include font-size(36);
+    line-height: 1.2rem;
+  }
+  &--xs {
+    @include font-size(24);
+    line-height: 1.8rem;
+  }
+  &--xxs {
+    @include font-size(16);
+    line-height: 1.5rem;
+  }
 }
 
 //pageheader (consists of pageheader-logo + pageheader-primary and then pageheader-text
-.pageheader--logo{
-  font-size:72px;
+.pageheader--logo {
+  @include font-size(72);
   font-family: $headerfont;
   text-transform: uppercase;
-  line-height:1rem;
+  line-height: 1rem;
 }
-.pageheader--primary{
-font-size:64px;
-font-family: $primaryfont;
-line-height:0.8rem;
+.pageheader--primary {
+  @include font-size(64);
+  font-family: $primaryfont;
+  line-height: 0.8rem;
 }
-.pageheader_text{
-  font-size:36px;
-  font-family:$primaryfont;
-  font-weight:bold;
+.pageheader_text {
+  @include font-size(36);
+  font-family: $primaryfont;
+  font-weight: bold;
   line-height: 2.4rem;
 }
-.logo{
-  font-size:2rem;
-  font-weight:800;
-  font-family:$headerfont;
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: $headerfont;
   text-transform: uppercase;
 }
-

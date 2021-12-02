@@ -7,31 +7,30 @@
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.1rem;
-}
-.button--pink{
-  background-color: $color-pink;
+
+  &--pink {
+    background-color: $color-pink;
   border-color: $color-pink;
-}
-.button--black{
-  background-color: black;
-  border-color:black;
-}
-.button_text--black{
-  color:$color-black;
-}
-.button_text--white{
-  color:$color-white;
-}
-.button--if-pressed{
- background-color:$color-background;border-color:$color-background; 
- color:$color-alt-black;
-}
-.button:hover,
-.button:focus-within{
-  background: $color-pink;
+  }
+
+  &--black {
+    background-color: $color-black;
+  border-color:$color-black;
+  }
+  &:hover,
+  &:focus-within{
+    background: $color-pink;
   opacity:0.4;
   cursor:pointer;
+  }
 }
+
+.button--if-pressed{
+ background-color:$color-background;
+ border-color:$color-background; 
+ color:$color-alt-black;
+}
+
 .radiobutton--interactive{
   display: flex;
   align-items: center;
@@ -55,7 +54,7 @@
   width: 22px;
   height: 22px;
   border-radius: 100px;
-  background: linear-gradient(to right bottom, #f4f4f4,black);
+  background: linear-gradient(to right bottom, $color-background,$color-black);
   position: relative;
 }
 .rad-design::before {
