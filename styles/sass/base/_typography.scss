@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+//main fonts:
+$headerfont: "Unna", Georgia, serif;
+$primaryfont: "Roboto", Verdana, sans-serif;
+
+//paragraph texts
+.header-text{
+  font-family: $headerfont;
+}
+.text{
+  font-family: $primaryfont;
+}
+
+.txt-white{
+  color:$color-white;
+}
+.txt-black{
+  color:$color-black;
+}
+.txt-white{
+  color: $color-pink;
+}
+.txt-altblack{
+  color:$color-alt-black;
+}
+.txt-white-80{
+  color:$color-background;
+}
+.centered-txt{
+  text-align:center;
+}
+.bold-txt{
+  font-weight:bold;
+  line-height:1.5rem;
+}
+.cursive-txt{
+  font-style:italic;
+}
+
+//a-elements
+.link {
+font-weight: bold;
+font-family: $primaryfont;
+}
+.link--black{
+color:$color-alt-black;
+}
+.link--white{
+  color:$color-background;
+}
+.link--clicked{
+  color:$color-white;
+  font-style:italic;
+}
+.link--pink{
+  color:$color-pink;
+}

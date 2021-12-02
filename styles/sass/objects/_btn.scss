@@ -1,0 +1,133 @@
+.button{
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+  border-style: solid;
+  font-family: $primaryfont;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.button--pink{
+  background-color: $color-pink;
+  border-color: $color-pink;
+}
+.button--black{
+  background-color: black;
+  border-color:black;
+}
+.button_text--black{
+  color:$color-black;
+}
+.button_text--white{
+  color:$color-white;
+}
+.button--if-pressed{
+ background-color:$color-background;border-color:$color-background; 
+ color:$color-alt-black;
+}
+.button:hover,
+.button:focus-within{
+  background: $color-pink;
+  opacity:0.4;
+  cursor:pointer;
+}
+.radiobutton--interactive{
+  display: flex;
+  align-items: center;
+  font-family:$primaryfont;
+  border-radius:100px;
+  padding:1rem;
+  margin:0%;
+  cursor:pointer;
+  transition:.3s;
+  
+.rad-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+.rad-design {
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+  background: linear-gradient(to right bottom, #f4f4f4,black);
+  position: relative;
+}
+.rad-design::before {
+  content: '';
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: hsl(0, 0%, 90%);
+  transform: scale(1.1);
+  transition: .3s;
+}
+.rad-input:checked+.rad-design::before {
+  transform: scale(0);
+}
+.rad-text {
+  margin-left: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: .3s;
+}
+}
+.radiobutton{
+  display: flex;
+  align-items: center;
+  font-family:$primaryfont;
+  border-radius:100px;
+  padding:1rem;
+  margin:0%;
+  cursor:pointer;
+  transition:.3s;
+  
+.rad-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+}
+.rad-design {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background: $color-background;
+  position: relative;
+}
+.rad-design--black {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background: $color-black;
+  position: relative;
+}
+.rad-design_outline--white{
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  background: none;
+  border-style:solid;
+  border-color: $color-background;
+  position: relative;
+}
+.rad-design_outline{
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  background: none;
+  border-style:solid;
+  border-color: $color-black;
+  position: relative;
+}

@@ -8,18 +8,19 @@
 
 // Mixins
 // --------------------
+// @import 'mixins/mixins';
 @import 'mixins/mixins';
 
 // Reset and base files
 // --------------------
 @import 'base/base';
-@import 'base/reset';
-
-
+@import "base/typography";
+//@import 'base/reset';
 
 // Objects
 // --------------------
-
+@import "objects/headings";
+@import "objects/btn"
 
 // Layouts
 // --------------------
