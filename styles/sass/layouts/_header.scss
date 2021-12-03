@@ -3,7 +3,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 20px;
   z-index: 3;
   @include flexBox(row, center, space-between);
   transition: all 0.5s ease;
@@ -112,7 +112,7 @@
     right: 0;
     top: 74px;
     background: $color-white;
-    padding: 30px;
+    padding: 30px 20px;
     @include breakpoint(small-max) {
       display: none;
     }
