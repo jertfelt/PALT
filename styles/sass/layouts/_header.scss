@@ -1,0 +1,228 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0 30px;
+  z-index: 3;
+  @include flexBox(row, center, space-between);
+  transition: all 0.5s ease;
+  @include breakpoint(small-max) {
+    height: 85px;
+  }
+
+  &__logo {
+    @include font-size(36);
+    font-family: $font-secondary;
+    color: $color-black;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @include breakpoint(small-max) {
+      @include font-size(45);
+      color: $color-white;
+    }
+  }
+
+  &--transparent {
+    background: transparent;
+    .logo--white {
+      @include breakpoint(small-max-m) {
+        display: none;
+      }
+    }
+  }
+
+  &--modified {
+    border-bottom: none;
+    background: $color-white;
+    height: 74px;
+    @include breakpoint(small-max) {
+      background: transparent;
+      height: 85px;
+    }
+    .logo--black {
+      display: block;
+      @include breakpoint(small-max) {
+        display: none;
+      }
+    }
+  }
+
+  &--modified.fade-in {
+    background: $color-white;
+
+    a {
+      color: $color-black;
+      &:hover {
+        color: $color-pink;
+      }
+    }
+    .logo--white {
+      display: none;
+    }
+    .logo--black {
+      display: block;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+    @include flexBox(row, center, space-between);
+  }
+}
+
+.main-menu {
+  display: none;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  &:before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: $color-grey;
+    display: block;
+
+    @include breakpoint(small-max) {
+      display: none;
+    }
+  }
+  a {
+    @include breakpoint(small-max) {
+      color: $color-white;
+    }
+  }
+
+  li:first-child {
+    margin-top: 30px;
+    @include breakpoint(small-max) {
+      margin-top: 0;
+    }
+  }
+
+  &.menu-opened {
+    width: 100%;
+    display: block;
+    height: calc(100vh - 74px);
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    top: 74px;
+    background: $color-white;
+    padding: 30px;
+    @include breakpoint(small-max) {
+      display: none;
+    }
+
+    li {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    a {
+      @include font-size(38);
+      display: block;
+      color: $color-black;
+      text-transform: capitalize;
+      padding: 25px 0;
+
+      @include breakpoint(small-max) {
+        padding: 25px 10px;
+      }
+    }
+  }
+
+  @include breakpoint(small-max) {
+    display: flex;
+  }
+
+  li {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+
+    @include breakpoint(small-max) {
+      margin: 0 40px 0 0;
+    }
+  }
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  position: absolute;
+  right: 30px;
+  top: 32px;
+  padding: 0;
+
+  &.menu-open {
+    span {
+      background: transparent;
+
+      &:before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &:after {
+        bottom: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @include breakpoint(small-max) {
+    display: none;
+  }
+
+  span {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    height: 3px;
+    background: $color-black;
+    width: 100%;
+    transition: 0.3s all ease-out;
+
+    &:before {
+      content: "";
+      top: -7px;
+      height: 3px;
+      background: $color-black;
+      position: absolute;
+      width: 100%;
+      right: 0;
+      transition: 0.3s all ease-out;
+    }
+
+    &:after {
+      content: "";
+      bottom: -7px;
+      height: 3px;
+      background: $color-black;
+      position: absolute;
+      width: 100%;
+      right: 0;
+      transition: 0.3s all ease-out;
+    }
+  }
+
+  &.fade-in-nav {
+    span {
+      &:before {
+        background: $color-black;
+      }
+      &:after {
+        background: $color-black;
+      }
+    }
+  }
+}

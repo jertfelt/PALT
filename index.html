@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,26 +19,76 @@
     <title>PALT BYRÅ 2022</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">palt</div>
-        <ul>
-          <li>
-            <a href="/">Hem</a>
-          </li>
-          <li>
-            <a href="about.html">Om oss</a>
-          </li>
-          <li>
-            <a href="cases.html">Cases</a>
-          </li>
-          <li>
-            <a href="contact.html">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header header--transparent header--modified">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="header__logo">
+            <a href="/" class="link--white header__logo">
+              <img
+                src="styles/sass/img/palt-logo-white.svg"
+                alt="Palt logo"
+                class="logo--white"
+              />
+              <img
+                src="styles/sass/img/palt-logo-black.svg"
+                alt="Palt logo"
+                class="logo--black"
+              />
+            </a>
+          </div>
+          <button class="menu-toggle">
+            <span></span>
+          </button>
+          <ul class="main-menu">
+            <li>
+              <a href="/" class="link link--white text--xs text">Hem</a>
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="link link--white text--xs text"
+                target="_blank"
+                >Om oss</a
+              >
+            </li>
+            <li>
+              <a
+                href="cases.html"
+                class="link link--white text--xs text"
+                target="_blank"
+                >Cases</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="link link--white text--xs text"
+                target="_blank"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <section class="hero__wrap">
+      <div class="container">
+        <div class="hero__info">
+          <h1 class="text--white">PALT är en digitalbyrå</h1>
+          <p class="text--white text--s">
+            som är specialiserad på att ta fram smarta och responsiva lösningar
+            för ditt företag
+          </p>
+          <a
+            href="contact.html"
+            target="_blank"
+            class="button button--pink button--large"
+            >Kontakta oss</a
+          >
+        </div>
+      </div>
+    </section>
     <footer></footer>
-    <script src="main.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

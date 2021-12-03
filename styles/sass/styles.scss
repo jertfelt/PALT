@@ -13,19 +13,21 @@
 
 // Reset and base files
 // --------------------
+@import 'base/reset';
 @import 'base/base';
-@import "base/typography";
+@import 'base/font';
 //@import 'base/reset';
 
 // Objects
 // --------------------
 @import "objects/headings";
-@import "objects/btn"
+@import "objects/btn";
+@import "objects/links";
 
 // Layouts
 // --------------------
-
-
+@import "layouts/header";
+@import "layouts/hero";
 // Components
 // --------------------
 
