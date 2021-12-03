@@ -29,8 +29,9 @@
 
   &--large {
     padding: 16px 30px;
-
-    padding: 22px 90px;
+    @include breakpoint(small-max) {
+      padding: 22px 90px;
+    }
   }
 }
 
