@@ -1,0 +1,59 @@
+//paragraph texts
+
+.text {
+  font-family: $font-primary;
+  &--white {
+    color: $color-white;
+  }
+
+  &--black {
+    color: $color-black;
+  }
+
+  &--pink {
+    color: $color-pink;
+  }
+
+  &--altblack {
+    color: $color-alt-black;
+  }
+
+  &--white-80 {
+    color: $color-background;
+  }
+
+  &--bold {
+    font-weight: bold;
+    line-height: 1.5rem;
+  }
+
+  &--cursive {
+    font-style: italic;
+  }
+
+  &--xl {
+    @include font-size(72);
+  }
+
+  &--l {
+    @include font-size(54);
+  }
+  &--m {
+    @include font-size(48);
+  }
+  &--s {
+    @include font-size(22);
+    line-height: 28px;
+    @include breakpoint(small-max) {
+      @include font-size(36);
+      line-height: 42px;
+    }
+  }
+
+  &--xs {
+    @include font-size(24);
+  }
+  &--xxs {
+    @include font-size(16);
+  }
+}

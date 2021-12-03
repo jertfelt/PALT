@@ -1,0 +1,23 @@
+//a-elements
+.link {
+  font-weight: bold;
+  font-family: $font-primary;
+
+  &--black {
+    color: $color-alt-black;
+  }
+  &--white {
+    color: $color-white;
+  }
+  &--clicked {
+    color: $color-white;
+    font-style: italic;
+  }
+  &--pink {
+    color: $color-pink;
+  }
+
+  &:hover {
+    color: $color-pink;
+  }
+}

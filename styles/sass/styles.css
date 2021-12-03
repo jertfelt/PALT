@@ -1,150 +1,336 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-body {
-  font-size: 14px;
-  font-size: 0.875rem;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+
+
+   should we use this? not importing it right away as it interfered with the variables /T
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-.header-text {
-  font-family: "Unna", Georgia, serif;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after {
+  content: '';
+  content: none;
+}
+
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Roboto", Verdana, sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 991px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+a {
+  text-decoration: none;
 }
 
 .text {
   font-family: "Roboto", Verdana, sans-serif;
 }
 
-.txt-white {
+.text--white {
   color: #fff;
 }
 
-.txt-black {
+.text--black {
   color: black;
 }
 
-.txt-white {
+.text--pink {
   color: #EEB5B5;
 }
 
-.txt-altblack {
+.text--altblack {
   color: #282828;
 }
 
-.txt-white-80 {
+.text--white-80 {
   color: #f4f4f4;
 }
 
-.centered-txt {
-  text-align: center;
-}
-
-.bold-txt {
+.text--bold {
   font-weight: bold;
   line-height: 1.5rem;
 }
 
-.cursive-txt {
+.text--cursive {
   font-style: italic;
 }
 
-.link {
-  font-weight: bold;
-  font-family: "Roboto", Verdana, sans-serif;
-}
-
-.link--black {
-  color: #282828;
-}
-
-.link--white {
-  color: #f4f4f4;
-}
-
-.link--clicked {
-  color: #fff;
-  font-style: italic;
-}
-
-.link--pink {
-  color: #EEB5B5;
-}
-
-.header--xl {
-  font-family: "Unna", Georgia, serif;
+.text--xl {
   font-size: 72px;
-  line-height: 1.2rem;
+  font-size: 4.5rem;
 }
 
-.header--l {
-  font-family: "Unna", Georgia, serif;
+.text--l {
   font-size: 54px;
-  line-height: 1.2rem;
+  font-size: 3.375rem;
 }
 
-.header--m {
-  font-family: "Unna", Georgia, serif;
-  font-sisze: 48px;
-  line-height: 1.2rem;
+.text--m {
+  font-size: 48px;
+  font-size: 3rem;
 }
 
-.header--s {
-  font-family: "Unna", Georgia, serif;
-  font-size: 36px;
-  line-height: 1.2rem;
+.text--s {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 28px;
 }
 
-.header--xs {
-  font-family: "Unna", Georgia, serif;
-  font-size: 1.6rem;
-  line-height: 1.4rem;
+@media only screen and (min-width: 768px) {
+  .text--s {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 42px;
+  }
 }
 
-.header--xxs {
-  font-family: "Unna", Georgia, serif;
+.text--xs {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.text--xxs {
+  font-size: 16px;
   font-size: 1rem;
-  line-height: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Unna", Georgia, serif;
+}
+
+h1 {
+  font-size: 50px;
+  font-size: 3.125rem;
+  line-height: 55px;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 72px;
+    font-size: 4.5rem;
+    line-height: 72px;
+  }
+}
+
+h2 {
+  font-size: 54px;
+  font-size: 3.375rem;
+}
+
+h3 {
+  font-size: 48px;
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+
+h5 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.primary {
+  font-family: "Roboto", Verdana, sans-serif;
 }
 
 .primary--xl {
-  font-family: "Roboto", Verdana, sans-serif;
   font-size: 64px;
+  font-size: 4rem;
   line-height: 1.2rem;
 }
 
 .primary--l {
-  font-family: "Roboto", Verdana, sans-serif;
   font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.2rem;
 }
 
 .primary--m {
-  font-family: "Roboto", Verdana, sans-serif;
   font-size: 44px;
   line-height: 1.2rem;
 }
 
 .primary--s {
-  font-family: "Roboto", Verdana, sans-serif;
   font-size: 36px;
+  font-size: 2.25rem;
   line-height: 1.2rem;
 }
 
 .primary--xs {
-  font-family: "Roboto", Verdana, sans-serif;
-  font-size: 1.8rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.8rem;
 }
 
 .primary--xxs {
-  font-family: "Roboto", Verdana, sans-serif;
+  font-size: 16px;
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.pageheader--logo {
-  font-size: 72px;
-  font-size: 4.5rem;
-  font-family: "Unna", Georgia, serif;
-  text-transform: uppercase;
-  line-height: 1rem;
 }
 
 .pageheader--primary {
@@ -162,14 +348,10 @@ body {
   line-height: 2.4rem;
 }
 
-.logo {
-  font-size: 2rem;
-  font-weight: 800;
-  font-family: "Unna", Georgia, serif;
-  text-transform: uppercase;
-}
-
 .button {
+  font-size: 18px;
+  font-size: 1.125rem;
+  display: inline-block;
   padding: 0.6rem 1rem 0.6rem 1rem;
   border-radius: 4px;
   text-align: center;
@@ -178,6 +360,8 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.1rem;
+  color: black;
+  cursor: pointer;
 }
 
 .button--pink {
@@ -185,30 +369,30 @@ body {
   border-color: #EEB5B5;
 }
 
+.button--pink:hover {
+  background: black;
+  color: #fff;
+}
+
 .button--black {
   background-color: black;
   border-color: black;
 }
 
-.button_text--black {
-  color: black;
+.button--large {
+  padding: 16px 30px;
 }
 
-.button_text--white {
-  color: #fff;
+@media only screen and (min-width: 768px) {
+  .button--large {
+    padding: 22px 90px;
+  }
 }
 
 .button--if-pressed {
   background-color: #f4f4f4;
   border-color: #f4f4f4;
   color: #282828;
-}
-
-.button:hover,
-.button:focus-within {
-  background: #EEB5B5;
-  opacity: 0.4;
-  cursor: pointer;
 }
 
 .radiobutton--interactive {
@@ -223,8 +407,8 @@ body {
   padding: 1rem;
   margin: 0%;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .radiobutton--interactive .rad-input {
@@ -247,7 +431,7 @@ body {
 }
 
 .radiobutton--interactive .rad-design::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: inherit;
   height: inherit;
@@ -255,8 +439,8 @@ body {
   background: #e6e6e6;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .radiobutton--interactive .rad-input:checked + .rad-design::before {
@@ -269,8 +453,8 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 900;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .radiobutton {
@@ -285,8 +469,8 @@ body {
   padding: 1rem;
   margin: 0%;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .radiobutton .rad-input {
@@ -333,5 +517,398 @@ body {
   border-style: solid;
   border-color: black;
   position: relative;
+}
+
+.link {
+  font-weight: bold;
+  font-family: "Roboto", Verdana, sans-serif;
+}
+
+.link--black {
+  color: #282828;
+}
+
+.link--white {
+  color: #fff;
+}
+
+.link--clicked {
+  color: #fff;
+  font-style: italic;
+}
+
+.link--pink {
+  color: #EEB5B5;
+}
+
+.link:hover {
+  color: #EEB5B5;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 85px;
+  }
+}
+
+.header__logo {
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-family: "Unna", Georgia, serif;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .header__logo {
+    font-size: 45px;
+    font-size: 2.8125rem;
+    color: #fff;
+  }
+}
+
+.header--transparent {
+  background: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .header--transparent .logo--white {
+    display: none;
+  }
+}
+
+.header--modified {
+  border-bottom: none;
+  background: #fff;
+  height: 74px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header--modified {
+    background: transparent;
+    height: 85px;
+  }
+}
+
+.header--modified .logo--black {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .header--modified .logo--black {
+    display: none;
+  }
+}
+
+.header--modified.fade-in {
+  background: #fff;
+}
+
+.header--modified.fade-in a {
+  color: black;
+}
+
+.header--modified.fade-in a:hover {
+  color: #EEB5B5;
+}
+
+.header--modified.fade-in .logo--white {
+  display: none;
+}
+
+.header--modified.fade-in .logo--black {
+  display: block;
+}
+
+.header__nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-menu {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu:before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-menu:before {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-menu a {
+    color: #fff;
+  }
+}
+
+.main-menu li:first-child {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-menu li:first-child {
+    margin-top: 0;
+  }
+}
+
+.main-menu.menu-opened {
+  width: 100%;
+  display: block;
+  height: calc(100vh - 74px);
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  top: 74px;
+  background: #fff;
+  padding: 30px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-menu.menu-opened {
+    display: none;
+  }
+}
+
+.main-menu.menu-opened li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.main-menu.menu-opened a {
+  font-size: 38px;
+  font-size: 2.375rem;
+  display: block;
+  color: black;
+  text-transform: capitalize;
+  padding: 25px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-menu.menu-opened a {
+    padding: 25px 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.main-menu li {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-menu li {
+    margin: 0 40px 0 0;
+  }
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  position: absolute;
+  right: 30px;
+  top: 32px;
+  padding: 0;
+}
+
+.menu-toggle.menu-open span {
+  background: transparent;
+}
+
+.menu-toggle.menu-open span:before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-toggle.menu-open span:after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle span {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  height: 3px;
+  background: black;
+  width: 100%;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+.menu-toggle span:before {
+  content: "";
+  top: -7px;
+  height: 3px;
+  background: black;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+.menu-toggle span:after {
+  content: "";
+  bottom: -7px;
+  height: 3px;
+  background: black;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+.menu-toggle.fade-in-nav span:before {
+  background: black;
+}
+
+.menu-toggle.fade-in-nav span:after {
+  background: black;
+}
+
+.hero__wrap {
+  position: relative;
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+  background-image: url(../sass/img/hero-wrapper.jpg);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__wrap {
+    min-height: 600px;
+    padding: 0 20px;
+  }
+}
+
+.hero__wrap:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero__info {
+  position: relative;
+  width: 100%;
+  padding: 40px 0 0;
+}
+
+@media only screen and (min-width: 991px) {
+  .hero__info {
+    width: 80%;
+  }
+}
+
+.hero__info h1 {
+  margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__info h1 {
+    margin-bottom: 30px;
+  }
+}
+
+.hero__info p {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__info p {
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

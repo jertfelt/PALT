@@ -1,4 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  @include font-size(14);
-  font-family: $primaryfont;
+  @include font-size(16);
+  font-family: $font-primary;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  @include breakpoint(medium-tablet-max) {
+    max-width: 1200px;
+  }
+}
+
+a {
+  text-decoration: none;
 }
