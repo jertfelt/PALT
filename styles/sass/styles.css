@@ -911,4 +911,8 @@ h6 {
     margin-bottom: 40px;
   }
 }
+
+.hero__wrap.hero__about {
+  background-image: url(../sass/img/Accessibility.png);
+}
 /*# sourceMappingURL=styles.css.map */
