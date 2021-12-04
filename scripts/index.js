@@ -48,12 +48,12 @@ Menu();
 
 //Active sub-pages
 ( function () {
-	var current = location.pathname.split( '/' )[1];
-	if ( current === "" ) return;
-	var menuItems = document.querySelectorAll( '.main-menu li a' );
-	for ( var i = 0, len = menuItems.length; i < len; i++ ) {
-		if ( menuItems[i].getAttribute( "href" ).indexOf( current ) !== -1 ) {
-			menuItems[i].className += " is-active";
+	const current_path = location.pathname.split( '/' )[1];
+	if ( current_path === "" ) return;
+	const menuItems = document.querySelectorAll( '.main-menu li a' );
+	menuItems.forEach( item => {
+		if ( item.getAttribute( "href" ).indexOf( current_path ) !== -1 ) {
+			item.className += " is-active";
 		}
-	}
+	} )
 } )();
