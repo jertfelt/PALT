@@ -695,6 +695,10 @@ h6 {
   }
 }
 
+.main-menu a.is-active {
+  color: #EEB5B5;
+}
+
 .main-menu li:first-child {
   margin-top: 30px;
 }
@@ -863,6 +867,10 @@ h6 {
   background-image: url(../sass/img/hero-wrapper.jpg);
 }
 
+.hero__wrap.hero__about {
+  background-image: url(../sass/img/Accessibility.png);
+}
+
 @media only screen and (min-width: 768px) {
   .hero__wrap {
     min-height: 600px;
@@ -910,9 +918,5 @@ h6 {
   .hero__info p {
     margin-bottom: 40px;
   }
-}
-
-.hero__wrap.hero__about {
-  background-image: url(../sass/img/Accessibility.png);
 }
 /*# sourceMappingURL=styles.css.map */

@@ -93,6 +93,9 @@
     @include breakpoint(small-max) {
       color: $color-white;
     }
+	&.is-active {
+	color: $color-pink;
+	}
   }
 
   li:first-child {
