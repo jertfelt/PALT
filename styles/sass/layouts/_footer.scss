@@ -1,0 +1,10 @@
+.footer-container{
+  height: 80px;
+  background-color:$color-black;
+  display: flex;
+  .footer-object{
+    font-family: $font-secondary;
+    background-color: $color-black;
+    flex-basis: 100%;
+  }
+}

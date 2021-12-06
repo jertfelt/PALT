@@ -9,7 +9,6 @@
 
 // Mixins
 // --------------------
-// @import 'mixins/mixins';
 @import 'mixins/mixins';
 
 // Reset and base files
@@ -30,9 +29,8 @@
 @import "layouts/header";
 @import "layouts/hero";
 @import "layouts/about";
-
 @import "layouts/homepage";
-
+@import "layouts/footer";
 // Components
 // --------------------
 
