@@ -5,8 +5,49 @@
       padding: 60px 0;
     }
   }
+
+  &__slider {
+    margin: 0;
+    @include breakpoint(small-max) {
+      margin: 30px 0;
+    }
+    &__info {
+      padding: 30px 20px;
+      max-width: 100%;
+      @include breakpoint(small-max) {
+        max-width: 50%;
+        margin: 0 auto;
+		padding: 30px 0;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      blockquote {
+        margin-bottom: 20px;
+        font-family: $font-secondary;
+      }
+    }
+    .glide__bullets {
+      text-align: center;
+      padding: 0 0 30px;
+      button {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &.glide__bullet--active {
+          background: $color-pink;
+        }
+      }
+    }
+  }
+
   &__features {
-    margin-top: 30px;
+    margin-top: 0;
+    @include breakpoint(small-max) {
+      margin-top: 30px;
+    }
 
     a {
       position: relative;
@@ -17,9 +58,9 @@
       zoom: 1.8;
       position: relative;
       margin-top: 40px;
-      
+
       .laptop-animation {
-        animation: laptopAnimation  0.5s ease-in-out both;
+        animation: laptopAnimation 0.5s ease-in-out both;
         transform-origin: 50% 100%;
       }
 
@@ -100,7 +141,7 @@
     height: 100%;
     position: relative;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 0;
     min-height: 470px;
     cursor: pointer;
     background-position: center;
@@ -108,6 +149,7 @@
     @include flexBox(column, center, center);
     @include breakpoint(small-max) {
       min-height: 650px;
+	  border-radius: 4px;
     }
     h2 {
       margin-bottom: 20px;
@@ -152,11 +194,11 @@
     &--about {
       background-image: url("../sass/img/about-wrapper-homepage.jpeg");
 
-	  &:hover{
-	    .laptop-animation {
+      &:hover {
+        .laptop-animation {
           animation: laptoprotationin 0.5s ease-in-out both;
         }
-	  }
+      }
     }
   }
 

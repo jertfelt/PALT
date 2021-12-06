@@ -196,7 +196,7 @@ a {
 }
 
 .text--altblack {
-  color: #282828;
+  background-color: #282828;
 }
 
 .text--white-80 {
@@ -218,8 +218,16 @@ a {
 }
 
 .text--l {
-  font-size: 54px;
-  font-size: 3.375rem;
+  font-size: 34px;
+  font-size: 2.125rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .text--l {
+    font-size: 54px;
+    font-size: 3.375rem;
+    line-height: 60px;
+  }
 }
 
 .text--m {
@@ -939,8 +947,62 @@ h6 {
   }
 }
 
+.homepage__slider {
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .homepage__slider {
+    margin: 30px 0;
+  }
+}
+
+.homepage__slider__info {
+  padding: 30px 20px;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .homepage__slider__info {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+}
+
+.homepage__slider__info p {
+  margin-bottom: 20px;
+}
+
+.homepage__slider__info blockquote {
+  margin-bottom: 20px;
+  font-family: "Unna", Georgia, serif;
+}
+
+.homepage__slider .glide__bullets {
+  text-align: center;
+  padding: 0 0 30px;
+}
+
+.homepage__slider .glide__bullets button {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.homepage__slider .glide__bullets button.glide__bullet--active {
+  background: #EEB5B5;
+}
+
 .homepage__features {
-  margin-top: 30px;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .homepage__features {
+    margin-top: 30px;
+  }
 }
 
 .homepage__features a {
@@ -955,8 +1017,8 @@ h6 {
 }
 
 .homepage__features .developer .laptop-animation {
-  -webkit-animation: laptopAnimation  0.5s ease-in-out both;
-          animation: laptopAnimation  0.5s ease-in-out both;
+  -webkit-animation: laptopAnimation 0.5s ease-in-out both;
+          animation: laptopAnimation 0.5s ease-in-out both;
   -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;
 }
@@ -1065,7 +1127,7 @@ h6 {
   height: 100%;
   position: relative;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 0;
   min-height: 470px;
   cursor: pointer;
   background-position: center;
@@ -1088,6 +1150,7 @@ h6 {
 @media only screen and (min-width: 768px) {
   .homepage__feature {
     min-height: 650px;
+    border-radius: 4px;
   }
 }
 
