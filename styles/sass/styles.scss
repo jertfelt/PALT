@@ -16,7 +16,7 @@
 @import 'base/reset';
 @import 'base/base';
 @import 'base/font';
-//@import 'base/reset';
+
 
 // Objects
 // --------------------
@@ -28,6 +28,8 @@
 // --------------------
 @import "layouts/header";
 @import "layouts/hero";
+@import "layouts/homepage";
+
 // Components
 // --------------------
 
