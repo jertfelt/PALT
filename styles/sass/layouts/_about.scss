@@ -1,0 +1,59 @@
+.black__box--about{
+  height: max-content;
+  background: $color-black;
+  @include flexBox(column, center, center);
+
+  h2{
+    color: $color-white;
+    margin: 20px;
+    span{
+      color: $color-pink;
+    }
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  div{
+    @include flexBox(column, center, center);
+    @include breakpoint(small-max) {
+      @include flexBox(row, center, center);
+    }
+    .info--about{
+      flex-basis: 40%;
+      @include flexBox(column, center, center);
+      margin: 30px;
+      order:2;
+      @include breakpoint(small-max) {
+        order:1;
+      }
+      h3{
+        color: $color-white;
+      }
+      p{
+        color: $color-white;
+        margin: 20px 0px;
+      }
+    }
+    .statistic--about{
+      @include flexBox(row, center, space-around);
+      flex-basis: 40%;
+      background: $color-white;
+      order: 1;
+      border-radius: 5px;
+      @include breakpoint(small-max) {
+        order:2;
+      }
+      div{
+        @include flexBox(column, center, center);
+        .fas{
+          margin: 20px 0px;
+        }
+        p{
+          color: $color-orange;
+          margin: 10px 0px;
+        }
+      }
+    }
+  }
+}

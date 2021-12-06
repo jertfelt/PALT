@@ -51,7 +51,8 @@
   }
 
   &--xs {
-    @include font-size(24);
+    @include font-size(18);
+    font-weight: bold;
   }
   &--xxs {
     @include font-size(16);
