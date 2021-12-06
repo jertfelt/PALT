@@ -36,11 +36,7 @@
         margin: 20px 0px;
       }
     }
-<<<<<<< HEAD
     .statistic--about {
-=======
-    .statistic--about{
->>>>>>> 8fe4e57e7984f6996180a6b8f85d8cd08adafbf0
       @include flexBox(row, center, space-around);
       flex-basis: 40%;
       background: $color-white;
