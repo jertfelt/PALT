@@ -939,6 +939,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 50px;
 }
 
 .black__box--about h2 {
@@ -1019,12 +1020,7 @@ h6 {
   }
 }
 
-.black__box--about div .info--about h3 {
-  color: #fff;
-}
-
 .black__box--about div .info--about p {
-  color: #fff;
   margin: 20px 0px;
 }
 
@@ -1081,5 +1077,142 @@ h6 {
 .black__box--about div .statistic--about div p {
   color: orange;
   margin: 10px 0px;
+}
+
+.pink__box--about {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #EEB5B5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  .pink__box--about {
+    margin-top: 50px;
+    padding: 0px 30px;
+  }
+}
+
+.pink__box--about h3 {
+  margin: 20px 0px;
+}
+
+.pink__box--about div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .pink__box--about div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.pink__box--about div .card {
+  height: 400px;
+  width: 80%;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.pink__box--about div .card h4 {
+  position: absolute;
+  bottom: 20px;
+  opacity: 0;
+}
+
+.pink__box--about div .card .card--inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.pink__box--about div .card .card--inner .card--front {
+  background: black;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.pink__box--about div .card .card--inner .card--front img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pink__box--about div .card .card--inner .card--back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background: white;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.pink__box--about div .card .card--inner .card--front, .pink__box--about div .card .card--inner .card--back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.pink__box--about div .card:hover img {
+  opacity: 0.4;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.pink__box--about div .card:hover h4 {
+  opacity: 1;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.pink__box--about div .card .flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 /*# sourceMappingURL=styles.css.map */
