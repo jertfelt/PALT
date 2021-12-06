@@ -58,4 +58,17 @@ Menu();
 	} )
 } )();
 
+	function flippedCard () {
+	const card = document.querySelectorAll(".card");
+
+	card.forEach((inner)=>{
+		
+		inner.addEventListener("click", () => {
+			let innerCard = inner.firstElementChild;
+			innerCard.classList.toggle("flipped");
+		})
+	})
+}
+flippedCard();
+
 

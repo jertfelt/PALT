@@ -2,6 +2,7 @@
 // --------------------
 @import 'variables/colors';
 @import 'variables/typography';
+@import 'variables/border';
 // Libraries and helpers
 // ---------------------
 
@@ -28,6 +29,8 @@
 // --------------------
 @import "layouts/header";
 @import "layouts/hero";
+@import "layouts/about";
+
 @import "layouts/homepage";
 
 // Components

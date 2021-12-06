@@ -59,5 +59,6 @@
   }
   &--xxs {
     @include font-size(16);
+    line-height: 25px;
   }
 }
