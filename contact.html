@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/sass/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>PALT = Kontakt</title>
+  </head>
+  <body>
+    <header class="header header--transparent header--modified">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="header__logo">
+            <a href="/" class="link--white header__logo">
+              <img
+                src="styles/sass/img/palt-logo-white.svg"
+                alt="Palt logo"
+                class="logo--white"
+              />
+              <img
+                src="styles/sass/img/palt-logo-black.svg"
+                alt="Palt logo"
+                class="logo--black"
+              />
+            </a>
+          </div>
+          <button class="menu-toggle">
+            <span></span>
+          </button>
+          <ul class="main-menu">
+            <li>
+              <a href="/" class="link link--white text--xs text">Hem</a>
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="link link--white text--xs text"
+                target="_blank"
+                >Om oss</a
+              >
+            </li>
+            <li>
+              <a
+                href="cases.html"
+                class="link link--white text--xs text"
+                target="_blank"
+                >Cases</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="link link--white text--xs text"
+                target="_blank"
+                >Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero__wrap hero__contact">
+      <div class="container">
+        <div class="hero__info">
+          <h1 class="text--white text--s">Kontakta oss</h1>
+          <p class="text--white text--l">
+           Välkommen att kontakta oss med dina frågor, tankar, idéer eller synpunkter.
+          </p>
+        </div>
+      </div>
+    </section>
+    <main class="contact__main"> 
+     <section class="contact formsection center">
+        <p class="primary--m contact--h2">Vi vill jättegärna att du hör av dig till oss!</h2>
+          <form class="contact__form center" name="contact--sheet" action="#">
+            <legend> <p class=" primary--s text--bold">Fyll i formuläret så hör vi av oss så fort vi kan.</p></legend>
+        <div class="inputWrapper">
+         <select id="form--category" class="form-options" name="options-selection" required>
+          <option value="">Hur kan vi hjälpa dig? *</option>
+          <option id="option-1" value="1">Köp av produkt/tjänst</option>
+          <option id="option-2" value="2">Frågor om företaget</option>
+          <option id="option-3" value="3">Synpunkter på webbplats</option>
+          <option id="option-4" value="4">Övrigt</option>
+        </select> 
+      </div>
+        <label class="input"><input type="text" name="sendername" maxlength="60" value="Namn:" class="userinput"/>
+        </label>
+        <label class="input">
+          <input type="text" id="sendermail" maxlength="60" value="me@example.com" class="userinput"required/>
+        </label>
+        <label class="input">
+         <input type="text" id ="senderphone" placeholder="Telefon:" pattern="[0-9]+" class="userinput" />
+        </label>
+        <label class="input">
+          <input type="text" value="Ämne:" maxlength="60" id="sendersubject" class="userinput"/>
+        </label>
+          <label class="freetxt input text--xs">
+            <span>Meddelande:</span>
+            <textarea id="sendercomment" rows="3" cols="100" class="userinput"></textarea>
+          </label>
+          <input type="submit" value="Skicka" id="submit--contactform" class="button--black">
+          </form>
+          </section>
+
+    </main>
+    <footer></footer>
+    <script src="scripts/index.js"></script>
+ 
+  </body>
+</html>

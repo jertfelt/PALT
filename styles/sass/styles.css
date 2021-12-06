@@ -250,8 +250,9 @@ a {
 }
 
 .text--xs {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 
 .text--xxs {
@@ -393,8 +394,22 @@ h6 {
 }
 
 .button--black {
+  color: #fff;
+  font-family: "Roboto", Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+  border-style: solid;
+  letter-spacing: 0.1rem;
+  padding: 0.6rem 1rem 0.6rem 1rem;
   background-color: black;
   border-color: black;
+}
+
+.button--black:hover {
+  background: #EEB5B5;
+  color: #fff;
 }
 
 .button--large {
@@ -906,6 +921,27 @@ h6 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.hero__wrap.hero__contact {
+  background-image: url(../sass/img/hero-contact.png);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__wrap.hero__contact {
+    min-height: 600px;
+    padding: 0 20px;
+  }
+}
+
+.hero__wrap.hero__contact:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .hero__info {
   position: relative;
   width: 100%;
@@ -1037,7 +1073,12 @@ h6 {
   }
 }
 
+.black__box--about div .info--about h3 {
+  color: #fff;
+}
+
 .black__box--about div .info--about p {
+  color: #fff;
   margin: 20px 0px;
 }
 
@@ -1208,7 +1249,8 @@ h6 {
   border-radius: 12px;
 }
 
-.pink__box--about div .card .card--inner .card--front, .pink__box--about div .card .card--inner .card--back {
+.pink__box--about div .card .card--inner .card--front,
+.pink__box--about div .card .card--inner .card--back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1596,5 +1638,131 @@ h6 {
 
 .homepage__services__info h4 {
   margin-bottom: 20px;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.contact__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.formsection {
+  height: 100vh;
+  background-color: #EEB5B5;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact--h2 {
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+.contact__form {
+  margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form legend p {
+  margin: 2%;
+}
+
+.inputWrapper {
+  position: relative;
+  display: block;
+  max-width: 800px;
+  min-width: 100px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  z-index: 10;
+}
+
+.inputWrapper select {
+  font-weight: bold;
+  font-family: "Roboto", Verdana, sans-serif;
+  border: none;
+  outline: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 12px 55px 15px 15px;
+  font-size: 18px;
+  color: #282828;
+}
+
+.inputWrapper:after {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 50px;
+  height: 100%;
+  line-height: 38px;
+  content: '\2228';
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.userinput {
+  max-width: 800px;
+  min-width: 100px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 12px 55px 15px 15px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  z-index: 10;
+  font-family: "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+#submit--contactform {
+  max-width: 200px;
+}
+
+.freetxt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 /*# sourceMappingURL=styles.css.map */
