@@ -3,7 +3,10 @@ body{
 }
 .contact__main{
   display: flex;
+<<<<<<< HEAD
   flex-direction:column;
+=======
+>>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -23,23 +26,39 @@ font-weight: bold;
 .contact__form{
   margin:5%;
   legend p{
+<<<<<<< HEAD
     margin-bottom:5%; 
+=======
+    margin:2%; 
+>>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
   }
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
 //Need to check mobilefirst here before continuing!
 .inputWrapper{
   position: relative;
   display: block;
   min-width: 800px;
+=======
+//Need to check mobilefirst here before continuing
+.inputWrapper{
+  position: relative;
+  display: block;
+  max-width: 800px;
+  min-width: 100px;
+>>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
   flex-basis:100%;
   margin: 0 auto;
   background-color: $color-background;
   z-index: 10;
+<<<<<<< HEAD
   margin-bottom: 18px;
 
   //media querie- bredd!!
+=======
+>>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
    
   select{
     font-weight: bold;
@@ -53,8 +72,12 @@ font-weight: bold;
     border-radius: 0;
     margin: 0;
     display: block;
+<<<<<<< HEAD
     min-width:80%;
     flex-basis:100%;
+=======
+    width: 100%;
+>>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
     padding: 12px 55px 15px 15px;
     font-size: 18px;
     color: $color-alt-black;
@@ -74,7 +97,12 @@ font-weight: bold;
 }
 
 .userinput{
+<<<<<<< HEAD
   min-width: 800px;
+=======
+  max-width: 800px;
+  min-width: 100px;
+>>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
   flex-basis: 100%;
   padding: 12px 55px 15px 15px;
   margin: 0 auto;
@@ -84,6 +112,7 @@ font-weight: bold;
   font-size: 18px;
   font-weight:bold;
   margin:1rem;
+<<<<<<< HEAD
   border-color: $color-pink;
   border-style:solid;
 //media querie- bredd!!
@@ -134,4 +163,17 @@ font-weight: bold;
 }
 .googlemap{
   width:100%;
+=======
+  //just for checking: color:blue;
+}
+
+#submit--contactform{
+  max-width:200px;
+}
+
+.freetxt{
+  display:flex;
+  flex-direction:row;
+  align-items: flex-start;
+>>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
 }
