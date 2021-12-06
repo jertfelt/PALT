@@ -17,7 +17,9 @@
         "layouts/_hero.scss",
         "layouts/_about.scss",
         "layouts/_homepage.scss",
-        "layouts/_contact.scss"
+        "layouts/_contact.scss",
+        "layouts/_about.scss"
+
     ],
     "names": [],
     "file": "styles.css"
