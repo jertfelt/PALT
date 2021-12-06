@@ -15,7 +15,7 @@
   }
 
   &--altblack {
-    color: $color-alt-black;
+    background-color: $color-alt-black;
   }
 
   &--white-80 {
@@ -36,7 +36,11 @@
   }
 
   &--l {
-    @include font-size(54);
+    @include font-size(34);
+    @include breakpoint(small-max) {
+      @include font-size(54);
+      line-height: 60px;
+    }
   }
   &--m {
     @include font-size(48);

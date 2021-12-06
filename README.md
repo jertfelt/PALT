@@ -1,2 +1,2 @@
-THE MASTER BRANCH SHOULD ALWAYS BE DEPLOYABLE
-https://medium.com/@jonathanmines/the-ultimate-github-collaboration-guide-df816e98fb67
+
+Link to mockup: https://www.figma.com/file/1WpcDJO8J5aYdVxMf1nwAx/Uppgift-HTML%2FCSS?node-id=0%3A1
