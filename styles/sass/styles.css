@@ -2066,4 +2066,19 @@ body {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
+
+.footer-container {
+  height: 80px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-container .footer-object {
+  font-family: "Unna", Georgia, serif;
+  background-color: black;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
