@@ -1,5 +1,4 @@
 //Header sizes Unna typeface
-
 h1, h2, h3, h4, h5, h6 {
 font-family: $font-secondary;
 }
@@ -36,14 +35,6 @@ h5 {
 h6 {
     @include font-size(16);
 }
-
-
-
-
-
-
-
-
 
 //primary font in different sizes:
 .primary {

@@ -23,8 +23,22 @@
   }
 
   &--black {
+    color:$color-white;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    border-style: solid;
+    letter-spacing: 0.1rem;
+    padding: 0.6rem 1rem 0.6rem 1rem;
     background-color: $color-black;
     border-color: $color-black;
+
+    &:hover {
+      background: $color-pink;
+      color: $color-black;
+    }
   }
 
   &--large {
@@ -143,4 +157,10 @@
   border-style: solid;
   border-color: $color-black;
   position: relative;
+}
+
+//placeholder for input fields
+::placeholder {
+  opacity:1;
+  color: $color-alt-black;
 }
