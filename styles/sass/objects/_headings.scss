@@ -13,7 +13,12 @@ h1 {
 }
 
 h2 {
-    @include font-size(54);
+    @include font-size(40);
+	line-height: 48px;
+    @include breakpoint(small-max){
+        @include font-size(64);
+		line-height: 74px;
+    }
 }
 
 h3 {
