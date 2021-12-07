@@ -2,63 +2,44 @@ body{
   background-color: $color-background;
 }
 .contact__main{
-  display: flex;
-<<<<<<< HEAD
-  flex-direction:column;
-=======
->>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
-  align-items: center;
-  justify-content: center;
+  @include flexBox(column, center, space-between);
   margin: 0 auto;
-  padding:3rem;
+  padding:0rem;
+  @include breakpoint (small-max) {
+    padding:2rem;}
 }
 .formsection{
-  height: 100vh; 
   background-color: $color-pink;
-  width:80%;
-  display: flex;
-  flex-direction: column;
+  width:100%;
+  @include flexBox(column, center, space-between);
+  padding:1rem;
 }
 .contact--h2{
-margin-top:5%;
 font-weight: bold;
+line-height: 3rem;
+text-align: left;
+@include font-size (40);
 }
+
 .contact__form{
+  @include flexBox(column, center, space-between);
+  width:100%;
   margin:5%;
   legend p{
-<<<<<<< HEAD
     margin-bottom:5%; 
-=======
-    margin:2%; 
->>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
+    @include font-size (24);
+    line-height: 1.8rem;
   }
-  display: flex;
-  flex-direction: column;
 }
-<<<<<<< HEAD
-//Need to check mobilefirst here before continuing!
 .inputWrapper{
   position: relative;
   display: block;
-  min-width: 800px;
-=======
-//Need to check mobilefirst here before continuing
-.inputWrapper{
-  position: relative;
-  display: block;
-  max-width: 800px;
-  min-width: 100px;
->>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
-  flex-basis:100%;
   margin: 0 auto;
   background-color: $color-background;
   z-index: 10;
-<<<<<<< HEAD
   margin-bottom: 18px;
-
-  //media querie- bredd!!
-=======
->>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
+  width:100%;
+  cursor: pointer;
    
   select{
     font-weight: bold;
@@ -72,15 +53,12 @@ font-weight: bold;
     border-radius: 0;
     margin: 0;
     display: block;
-<<<<<<< HEAD
     min-width:80%;
     flex-basis:100%;
-=======
-    width: 100%;
->>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
     padding: 12px 55px 15px 15px;
     font-size: 18px;
     color: $color-alt-black;
+    cursor: pointer;
   }
   &:after{
     position: absolute;
@@ -91,55 +69,56 @@ font-weight: bold;
     line-height: 38px;
     content: '\2228';
     text-align: center;
-    font-size: 24px;
+    font-size:1em;
     font-weight: bold;
+    transition:.5s;
+    margin:auto;
+  }
+
+// select:hover{
+// select:after{
+// transform:rotate(-180deg);
+//  }}
+// //returning to this if time 
 }
+.input{
+  @include flexBox(column, center, space-between);
+  width:100%;
 }
 
 .userinput{
-<<<<<<< HEAD
-  min-width: 800px;
-=======
-  max-width: 800px;
-  min-width: 100px;
->>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
-  flex-basis: 100%;
+  width:100%;
   padding: 12px 55px 15px 15px;
   margin: 0 auto;
   background-color: $color-background;
   z-index: 10;
   font-family: $font-primary;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight:bold;
   margin:1rem;
-<<<<<<< HEAD
   border-color: $color-pink;
   border-style:solid;
-//media querie- bredd!!
 }
-
 ::placeholder {
   opacity:1;
   color: $color-alt-black;
 }
 
 .txtuserinput{
-  min-width: 800px;
-  flex-basis: 100%;
+  width:100%;
   padding: 12px 55px 15px 15px;
   margin: 0 auto;
   background-color: $color-background;
   z-index: 10;
   font-family: $font-primary;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight:bold;
   margin:1rem;
   border-color: $color-pink;
   border-style:solid;
-//media querie- bredd!!
 }
 
-// .freetxt{
+//alternativ: .freetxt{
 //   display:flex;
 //   flex-direction:row;
 //   align-items: flex-start;
@@ -153,27 +132,31 @@ font-weight: bold;
   min-width:140px;
   padding: 15px;
   text-align: center;
-  display:flex;
-  align-self:center;
   flex-basis:100%;
-}
+  :hover{  //fungerar inte?
+    z-index:300;
+    background-color: $color-grey;
+    color:$color-black;
+  }
+} //lägg in meddelande i js
 
 .picture-info{
   background-color: $color-black;
-}
+padding-bottom:1rem;
+  img{
+    width:100%;
+  }
+  .contactdetails__div{
+    @include flexBox(column,flex-start,space-between);
+    margin:2rem;
+    .contactdetails__row{
+    @include flexBox(row,center,space-between);
+    margin:1rem;}
+    p {margin-left:1rem;}
+    .contacticon1{
+      @include flexBox(row,flex-start,space-between);}
+  }
+} //eventuellt läg till kul hover här också
 .googlemap{
   width:100%;
-=======
-  //just for checking: color:blue;
-}
-
-#submit--contactform{
-  max-width:200px;
-}
-
-.freetxt{
-  display:flex;
-  flex-direction:row;
-  align-items: flex-start;
->>>>>>> 4b1cb9c89f7471601a94be3814b7a40c298002ce
 }
