@@ -33,12 +33,12 @@
       padding: 22px 90px;
     }
   }
-}
 
-.button--if-pressed {
-  background-color: $color-background;
-  border-color: $color-background;
-  color: $color-alt-black;
+  &--if-pressed {
+    background-color: $color-background;
+    border-color: $color-background;
+    color: $color-alt-black;
+  }
 }
 
 .radiobutton--interactive {
@@ -70,17 +70,19 @@
       $color-black
     );
     position: relative;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+      background: hsl(0, 0%, 90%);
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
   }
-  .rad-design::before {
-    content: "";
-    display: inline-block;
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-    background: hsl(0, 0%, 90%);
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
+
   .rad-input:checked + .rad-design::before {
     transform: scale(0);
   }
