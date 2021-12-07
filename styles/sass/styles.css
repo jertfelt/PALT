@@ -1268,6 +1268,7 @@ h6 {
 
 .homepage__slider__info p {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .homepage__slider__info blockquote {
@@ -1310,6 +1311,12 @@ h6 {
   zoom: 1.8;
   position: relative;
   margin-top: 40px;
+}
+
+.homepage__features .developer__laptop {
+  position: absolute;
+  left: 0;
+  display: inline-block;
 }
 
 .homepage__features .developer .laptop-animation {
