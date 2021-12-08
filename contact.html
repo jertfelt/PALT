@@ -83,32 +83,32 @@
     </section>
     <main class="contact__main"> 
      <section class="contact formsection center">
-        <p class="primary--m contact--h2">Vi vill jättegärna att du hör av dig till oss!</h2>
+        <p class="primary--s contact--h2">Vi vill jättegärna att du hör av dig till oss!</p>
           <form class="contact__form center" name="contact--sheet" action="#">
             <legend> <p class=" primary--s text--bold">Fyll i formuläret så hör vi av oss så fort vi kan.</p></legend>
         <div class="inputWrapper">
          <select id="form--category" class="form-options" name="options-selection" required>
-          <option value="">Hur kan vi hjälpa dig? *</option>
+          <option value="">Hur kan vi hjälpa dig?</option>
           <option id="option-1" value="1">Köp av produkt/tjänst</option>
           <option id="option-2" value="2">Frågor om företaget</option>
           <option id="option-3" value="3">Synpunkter på webbplats</option>
           <option id="option-4" value="4">Övrigt</option>
         </select> 
       </div>
-        <label class="input"><input type="text" name="sendername" maxlength="60" value="Namn:" class="userinput"/>
+        <label class="input"><input type="text" name="sendername" maxlength="60" value="" placeholder="Namn:" class="userinput"/>
         </label>
         <label class="input">
-          <input type="text" id="sendermail" maxlength="60" value="me@example.com" class="userinput"required/>
+          <input type="text" id="sendermail" maxlength="60" value="" placeholder="me@example.com" class="userinput"required/>
         </label>
         <label class="input">
-         <input type="text" id ="senderphone" placeholder="Telefon:" pattern="[0-9]+" class="userinput" />
+         <input type="text" id ="senderphone" placeholder="Telefon:" value="" pattern="[0-9]+" class="userinput" />
         </label>
         <label class="input">
-          <input type="text" value="Ämne:" maxlength="60" id="sendersubject" class="userinput"/>
+          <input type="text" placeholder="Ämne:" value="" maxlength="60" id="sendersubject" class="userinput"/>
         </label>
-          <label class="freetxt input text--xs">
-            <span>Meddelande:</span>
-            <textarea id="sendercomment" rows="3" cols="100" class="userinput"></textarea>
+          <label class="freetxt input">
+            <!-- <span>Meddelande</span> class: text--xs -->
+            <textarea id="sendercomment" rows="4" cols="1"  value="" class="txtuserinput"placeholder="Meddelande:"></textarea>
           </label>
           <input type="submit" value="Skicka" id="submit--contactform" class="button--black">
           </form>
@@ -116,21 +116,21 @@
           <section class="picture-info-map">
             <div class="picture-info">
             <img src="styles\sass\img\we.jpg" alt ="Svartvitt fotografi på en byggnad i tegelsten: här är vi!">
-            <div class=" contactdetails__div text--white-80 text--xs text--bold">      <span class="contactdetails__row"><i class="fas fa-map-marker-alt"></i><span class="contactdetails__column"><p>PALT AB</p>
-             <p>Paltvägen 33</p>
-             <p>001 00 Norrland</p>
+            <div class=" contactdetails__div text--white-80 text--xs text--bold">      <span class="contactdetails__row contacticon1"><i class="fas fa-map-marker-alt"></i><span class="contactdetails__adress"><p>PALT AB <br>
+            Paltvägen 33<br>
+            001 00 Norrland<br></p>
             </span></span>
             <span class="contactdetails__row">
-              <i class="fas fa-phone-alt"></i><p>070 001 00 01</p>
+              <i class="fas fa-phone-alt"></i><p class="contact--phone">070 001 00 01</p>
             </span>
-            <span class="contactdetails__row"><i class="fas fa-envelope"></i><p>palt-agency@palt.com</p>
+            <span class="contactdetails__row"><i class="fas fa-envelope"></i><p class="contact--mail">palt-agency@palt.com</p>
             </div>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2419.160373945516!2d18.020969197838028!3d59.345253492320786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d9d263b022d%3A0x82fc0f30ed84f9ed!2sNackademin!5e0!3m2!1ssv!2sse!4v1638823133087!5m2!1ssv!2sse" alt="Googles karta" 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.1868727662657!2d14.886254116461746!3d63.38860518618015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466fdb4400fdb645%3A0x3b2a2996383e71ab!2sPaltv%C3%A4gen%201%2C%20836%2093%20Lit!5e0!3m2!1ssv!2sse!4v1638958505006!5m2!1ssv!2sse" width="800" height="600" alt="Googles karta" 
             class="googlemap"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </section>
-
+             
     </main>
     <footer class="footer-container">
       <div class="footer-object">

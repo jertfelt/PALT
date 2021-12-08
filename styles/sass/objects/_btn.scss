@@ -37,7 +37,11 @@
 
     &:hover {
       background: $color-pink;
+<<<<<<< HEAD
+      color: $color-black;
+=======
       color: $color-white;
+>>>>>>> b396abc8f9d7638eadeca474f17bc409e976df36
     }
   }
 
@@ -161,7 +165,20 @@
   position: relative;
 }
 
-//placeholder for input fields
+//userinput buttons for contact on every page
+.userinput_button{
+  width:100%;
+  padding: 12px 55px 15px 15px;
+  margin: 0 auto;
+  background-color: $color-background;
+  z-index: 10;
+  font-family: $font-primary;
+  font-size: 1rem;
+  font-weight:bold;
+  margin:1rem;
+  border-color: $color-pink;
+  border-style:solid;
+}
 ::placeholder {
   opacity:1;
   color: $color-alt-black;

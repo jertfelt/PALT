@@ -409,7 +409,7 @@ h6 {
 
 .button--black:hover {
   background: #EEB5B5;
-  color: #fff;
+  color: black;
 }
 
 .button--large {
@@ -550,6 +550,20 @@ h6 {
   border-style: solid;
   border-color: black;
   position: relative;
+}
+
+.userinput_button {
+  width: 100%;
+  padding: 12px 55px 15px 15px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  z-index: 10;
+  font-family: "Roboto", Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem;
+  border-color: #EEB5B5;
+  border-style: solid;
 }
 
 ::-webkit-input-placeholder {
@@ -994,18 +1008,154 @@ h6 {
   }
 }
 
-.homepage__info {
-  padding: 20px 0;
+body {
+  background-color: #f4f4f4;
+}
+
+.contact__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 0rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .homepage__info {
-    padding: 60px 0;
+  .contact__main {
+    padding: 2rem;
   }
+}
+
+.formsection {
+  background-color: #EEB5B5;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.contact--h2 {
+  font-weight: bold;
+  line-height: 3rem;
+  text-align: left;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 5%;
+}
+
+.contact__form legend p {
+  margin-bottom: 5%;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.inputWrapper {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  z-index: 10;
+  margin-bottom: 18px;
+  width: 100%;
+  cursor: pointer;
 }
 
 .homepage__slider {
   margin: 0;
+  display: block;
+  min-width: 80%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 12px 55px 15px 15px;
+  font-size: 18px;
+  color: #282828;
+  cursor: pointer;
+}
+
+.inputWrapper:after {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 50px;
+  height: 100%;
+  line-height: 38px;
+  content: '\2228';
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: auto;
+}
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.userinput {
+  width: 100%;
+  padding: 12px 55px 15px 15px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  z-index: 10;
+  font-family: "Roboto", Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem;
+  border-color: #EEB5B5;
+  border-style: solid;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1031,14 +1181,93 @@ h6 {
   margin-bottom: 20px;
 }
 
-.homepage__slider__info blockquote {
-  margin-bottom: 20px;
-  font-family: "Unna", Georgia, serif;
+.txtuserinput {
+  width: 100%;
+  padding: 12px 55px 15px 15px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  z-index: 10;
+  font-family: "Roboto", Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem;
+  border-color: #EEB5B5;
+  border-style: solid;
 }
 
 .homepage__slider .glide__bullets {
   text-align: center;
-  padding: 0 0 30px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+#submit--contactform :hover {
+  z-index: 300;
+  background-color: #ccc;
+  color: black;
+}
+
+.picture-info {
+  background-color: black;
+  padding-bottom: 1rem;
+}
+
+.picture-info img {
+  width: 100%;
+}
+
+.picture-info .contactdetails__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem;
+}
+
+.picture-info .contactdetails__div .contactdetails__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+}
+
+.picture-info .contactdetails__div p {
+  margin-left: 1rem;
+}
+
+.picture-info .contactdetails__div .contacticon1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .homepage__slider .glide__bullets button {
