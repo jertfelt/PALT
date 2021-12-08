@@ -11,37 +11,42 @@ body{
 .formsection{
   background-color: $color-pink;
   width: 100%;
-  @include flexBox(column, center, space-between);
   padding:2rem;
+  @include breakpoint (small-max) {
+    margin-bottom:2rem;}
+  
 }
 .contact--h2{
 font-weight: bold;
 line-height: 3rem;
 text-align: left;
 @include font-size (40);
+margin-bottom:1rem;
+@include breakpoint (medium-tablet-max){
+  width:50%;
+  
 }
-
+}
 .contact__form{
-  @include flexBox(column, center, space-between);
+  @include flexBox(column, flex-start, space-between);
   width:100%;
-  margin:5%;
   legend p{
-    margin-bottom:5%; 
     @include font-size (24);
     line-height: 1.8rem;
+    text-align:left;
+    margin-bottom:1rem;
+    width:60%;
     @include breakpoint (small-max){
-    //håller på här!
+      width:100%;
     }
   }
 }
-
 .inputWrapper{
   position: relative;
   display: block;
-  margin: 0 auto;
   background-color: $color-background;
-  z-index: 10;
-  margin-bottom: 18px;
+  z-index: 2;
+  margin-bottom: 1rem;
   width:100%;
   cursor: pointer;
   select{
@@ -92,7 +97,7 @@ text-align: left;
   width:100%;
   padding: 12px 55px 15px 15px;
   background-color: $color-background;
-  z-index: 3;
+  z-index: 2;
   font-family: $font-primary;
   font-size: 1rem;
   font-weight:bold;
@@ -100,10 +105,7 @@ text-align: left;
   border-color: $color-pink;
   border-style:solid;
 }
-::placeholder {
-  opacity:1;
-  color: $color-alt-black;
-}
+
 .txtuserinput{
   width:100%;
   padding: 12px 55px 15px 15px;
@@ -117,6 +119,7 @@ text-align: left;
   border-style:solid;
 }
 #submit--contactform{
+  align-self:center;
   max-width:200px;
   min-width:140px;
   padding: 15px;
@@ -135,17 +138,23 @@ padding-bottom:1rem;
     width:100%;
   }
 @include breakpoint(xsmall-max){
-  @include flexBox(row, strecth, flex-start);
+  @include flexBox(row, stretch, flex-start);
   padding-bottom:0rem;
   margin-top:0%;
   width:100%;
   img{width:50%;
   }
-}}
- //eventuellt läg till kul hover här också
+}
+@include breakpoint(medium-tablet-max){
+  img{width:70%;}
+}
+}
   .contactdetails__div{
     @include flexBox(column,flex-start,space-between);
     margin:2rem;
+    @include breakpoint(medium-tablet-max){
+      @include flexBox(column,flex-start,center); 
+    }
     .contactdetails__row{
     @include flexBox(row,center,space-between);
     margin:1rem;}
@@ -157,4 +166,8 @@ padding-bottom:1rem;
   }
 
 .googlemap{
-  width:100%;}
+  width:100%;
+height:300px;
+@include breakpoint(medium-tablet-max){
+  height:400px;
+}}
