@@ -13,6 +13,9 @@ body{
   width:100%;
   @include flexBox(column, center, space-between);
   padding:1rem;
+  @include breakpoint (small-max){
+    padding:2rem;
+  }
 }
 .contact--h2{
 font-weight: bold;
@@ -29,8 +32,12 @@ text-align: left;
     margin-bottom:5%; 
     @include font-size (24);
     line-height: 1.8rem;
+    @include breakpoint (small-max){
+    //håller på här!
+    }
   }
 }
+
 .inputWrapper{
   position: relative;
   display: block;
@@ -40,7 +47,6 @@ text-align: left;
   margin-bottom: 18px;
   width:100%;
   cursor: pointer;
-   
   select{
     font-weight: bold;
     font-family:$font-primary;
@@ -85,7 +91,6 @@ text-align: left;
   @include flexBox(column, center, space-between);
   width:100%;
 }
-
 .userinput{
   width:100%;
   padding: 12px 55px 15px 15px;
@@ -103,7 +108,6 @@ text-align: left;
   opacity:1;
   color: $color-alt-black;
 }
-
 .txtuserinput{
   width:100%;
   padding: 12px 55px 15px 15px;
@@ -117,7 +121,6 @@ text-align: left;
   border-color: $color-pink;
   border-style:solid;
 }
-
 #submit--contactform{
   max-width:200px;
   min-width:140px;
@@ -130,13 +133,21 @@ text-align: left;
     color:$color-black;
   }
 } //lägg in meddelande i js
-
 .picture-info{
   background-color: $color-black;
 padding-bottom:1rem;
   img{
     width:100%;
   }
+@include breakpoint(xsmall-max){
+  @include flexBox(row, strecth, flex-start);
+  padding-bottom:0rem;
+  margin-top:0%;
+  width:100%;
+  img{width:50%;
+  }
+}}
+ //eventuellt läg till kul hover här också
   .contactdetails__div{
     @include flexBox(column,flex-start,space-between);
     margin:2rem;
@@ -144,13 +155,11 @@ padding-bottom:1rem;
     @include flexBox(row,center,space-between);
     margin:1rem;}
     p {margin-left:1rem;}
+    @include breakpoint(xsmall-max){
+      margin:1rem;}
     .contacticon1{
       @include flexBox(row,flex-start,space-between);}
   }
-} //eventuellt läg till kul hover här också
+
 .googlemap{
-  width:100%;
-}
-              
-        
-            
+  width:100%;}
