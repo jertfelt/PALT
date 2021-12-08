@@ -23,8 +23,26 @@
   }
 
   &--black {
+    color:$color-white;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    border-style: solid;
+    letter-spacing: 0.1rem;
+    padding: 0.6rem 1rem 0.6rem 1rem;
     background-color: $color-black;
     border-color: $color-black;
+
+    &:hover {
+      background: $color-pink;
+<<<<<<< HEAD
+      color: $color-black;
+=======
+      color: $color-white;
+>>>>>>> b396abc8f9d7638eadeca474f17bc409e976df36
+    }
   }
 
   &--large {
@@ -33,12 +51,12 @@
       padding: 22px 90px;
     }
   }
-}
 
-.button--if-pressed {
-  background-color: $color-background;
-  border-color: $color-background;
-  color: $color-alt-black;
+  &--if-pressed {
+    background-color: $color-background;
+    border-color: $color-background;
+    color: $color-alt-black;
+  }
 }
 
 .radiobutton--interactive {
@@ -70,17 +88,19 @@
       $color-black
     );
     position: relative;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+      background: hsl(0, 0%, 90%);
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
   }
-  .rad-design::before {
-    content: "";
-    display: inline-block;
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-    background: hsl(0, 0%, 90%);
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
+
   .rad-input:checked + .rad-design::before {
     transform: scale(0);
   }
@@ -143,4 +163,23 @@
   border-style: solid;
   border-color: $color-black;
   position: relative;
+}
+
+//userinput buttons for contact on every page
+.userinput_button{
+  width:100%;
+  padding: 12px 55px 15px 15px;
+  margin: 0 auto;
+  background-color: $color-background;
+  z-index: 10;
+  font-family: $font-primary;
+  font-size: 1rem;
+  font-weight:bold;
+  margin:1rem;
+  border-color: $color-pink;
+  border-style:solid;
+}
+::placeholder {
+  opacity:1;
+  color: $color-alt-black;
 }

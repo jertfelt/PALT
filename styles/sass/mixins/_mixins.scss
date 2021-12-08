@@ -3,7 +3,6 @@
   font-size: $size-value * 1px;
   font-size: $size-value / 16 * 1rem;
 }
-
 //Flex
 @mixin flexBox($direction, $align, $content) {
   display: flex;

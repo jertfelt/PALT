@@ -21,6 +21,7 @@
       }
       p {
         margin-bottom: 20px;
+		margin-top: 20px;
       }
       blockquote {
         margin-bottom: 20px;
@@ -58,6 +59,12 @@
       zoom: 1.8;
       position: relative;
       margin-top: 40px;
+
+	  &__laptop {
+	  	position: absolute;
+		left: 0;
+		display: inline-block;
+	  }
 
       .laptop-animation {
         animation: laptopAnimation 0.5s ease-in-out both;
