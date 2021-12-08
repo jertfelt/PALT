@@ -1,8 +1,137 @@
-body {
-  display: grid;
-  place-content: center;
+body{
+  background-color: $color-background;
+}
+.contact__main{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding:3rem;
+}
+.formsection{
+  height: 100vh; 
+  background-color: $color-pink;
+  width:80%;
+  display: flex;
+  flex-direction: column;
+}
+.contact--h2{
+margin-top:5%;
+font-weight: bold;
+}
+.contact__form{
+  margin:5%;
+  legend p{
+    margin:2%; 
+  }
+  display: flex;
+  flex-direction: column;
+}
+//Need to check mobilefirst here before continuing
+.inputWrapper{
+  position: relative;
+  display: block;
+  max-width: 800px;
+  min-width: 100px;
+  flex-basis:100%;
+  margin: 0 auto;
+  background-color: $color-background;
+  z-index: 10;
+   
+  select{
+    font-weight: bold;
+    font-family:$font-primary;
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    min-width:80%;
+    flex-basis:100%;
+    width: 100%;
+    padding: 12px 55px 15px 15px;
+    font-size: 18px;
+    color: $color-alt-black;
+  }
+  &:after{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 50px;
+    height: 100%;
+    line-height: 38px;
+    content: '\2228';
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+}
 
-  min-height: 100vh;
-  margin: 0;
-  padding: 40px;
-  box-sizing: border-box;}
+.userinput{
+  max-width: 800px;
+  min-width: 100px;
+  flex-basis: 100%;
+  padding: 12px 55px 15px 15px;
+  margin: 0 auto;
+  background-color: $color-background;
+  z-index: 10;
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight:bold;
+  margin:1rem;
+  border-color: $color-pink;
+  border-style:solid;
+//media querie- bredd!!
+}
+
+::placeholder {
+  opacity:1;
+  color: $color-alt-black;
+}
+
+.txtuserinput{
+  min-width: 800px;
+  flex-basis: 100%;
+  padding: 12px 55px 15px 15px;
+  margin: 0 auto;
+  background-color: $color-background;
+  z-index: 10;
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight:bold;
+  margin:1rem;
+  border-color: $color-pink;
+  border-style:solid;
+//media querie- bredd!!
+}
+
+// .freetxt{
+//   display:flex;
+//   flex-direction:row;
+//   align-items: flex-start;
+//   span{
+//     margin-top:1rem;
+//   }
+// }
+
+#submit--contactform{
+  max-width:200px;
+  min-width:140px;
+  padding: 15px;
+  text-align: center;
+  display:flex;
+  align-self:center;
+  flex-basis:100%;
+}
+
+.picture-info{
+  background-color: $color-black;
+}
+.googlemap{
+  width:100%;
+}
