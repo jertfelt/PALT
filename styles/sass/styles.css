@@ -1598,18 +1598,186 @@ h6 {
   margin-bottom: 20px;
 }
 
-.footer-container {
-  height: 80px;
-  background-color: black;
+.footer-container1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #EEB5B5;
 }
 
-.footer-container .footer-object {
-  font-family: "Unna", Georgia, serif;
+.footer-container1 .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 180px;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.footer-container1 .footer-content .form-object {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.footer-container1 .footer-content .form-object input[type="email"] {
+  margin-left: 10px;
+}
+
+.footer-container1 .footer-content .form-object input {
+  height: 40px;
+  width: 90%;
+  padding: 10px;
+}
+
+.footer-container1 .footer-content .form-object button {
+  height: 40px;
+  width: 90%;
+  margin-left: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-container1 .footer-content .form-object label {
+  display: none;
+}
+
+.footer-container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 200px;
   background-color: black;
+}
+
+.footer-container2 .footer-object1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+.footer-container2 .footer-object1 p {
+  display: block;
+  width: 150px;
+  padding: 2px;
+}
+
+.footer-container2 .footer-object2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.footer-container2 .footer-object2 a {
+  color: #fff;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin-bottom: 5px;
+}
+
+.footer-container2 .footer-object2 .icon-div {
+  display: inline-block;
+}
+
+.footer-container2 .footer-object2 .icon-div a i {
+  padding: 3px;
+  height: 100%;
+}
+
+.footer-container2 .footer-object3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.footer-container2 .footer-object3 a {
+  display: block;
+  color: #fff;
+  width: 80px;
+}
+
+.footer-container2 .footer-object3 a:hover {
+  color: #EEB5B5;
+}
+
+.footer-container2 .footer-object3 a .selected {
+  color: #EEB5B5;
 }
 /*# sourceMappingURL=styles.css.map */

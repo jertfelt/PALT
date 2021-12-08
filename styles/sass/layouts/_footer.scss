@@ -1,10 +1,81 @@
-.footer-container{
-  height: 80px;
-  background-color:$color-black;
-  display: flex;
-  .footer-object{
-    font-family: $font-secondary;
-    background-color: $color-black;
-    flex-basis: 100%;
+ .footer-container1{
+  @include flexBox(row,flex-start,center);
+  background-color: $color-pink;
+
+  .footer-content{
+    @include flexBox(column,flex-start,space-around);
+    height: 180px;
+    flex-basis: 70%;
+
+  .form-object{
+    @include flexBox(row,flex-start,space-between);
+    width: 100%;
+    input[type="email"]{
+      margin-left: 10px;
+    }
+    input{
+      height: 40px;
+      width:90%;
+      padding:10px;
+    }
+    button{
+      height: 40px;
+      width:90%;
+      margin-left: 10px;
+      color:$color-white;
+      text-transform: uppercase
+    }
+    label{
+      display: none;
+    }
   }
+}
+}
+.footer-container2{
+  @include flexBox(row,center,flex-start);
+  height: 200px;
+  background-color:$color-black;
+
+  .footer-object1{
+    @include flexBox(column,center,flex-start);
+    text-align: left;
+    flex-basis: 100%;
+    p{
+      display: block;
+      width:150px;
+      padding:2px;
+    }
+  }
+  .footer-object2{
+    @include flexBox(column,center,flex-start);
+    flex-basis: 100%;
+    a{
+      color: $color-white;
+      text-decoration-line: underline;
+      margin-bottom: 5px;
+    }
+    .icon-div{
+      display: inline-block;
+      a i {
+        padding:3px;
+        height: 100%;
+      }
+    }
+  }
+  .footer-object3{
+    @include flexBox(column,center,flex-start);
+    flex-basis: 100%;
+    a{
+      display: block;
+      color: $color-white;
+      width: 80px;
+      &:hover{
+        color:$color-pink;
+      }
+      .selected{
+        color: $color-pink;
+      }
+    }
+  } 
+  
 }
