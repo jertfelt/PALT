@@ -409,7 +409,7 @@ h6 {
 
 .button--black:hover {
   background: #EEB5B5;
-  color: #fff;
+  color: black;
 }
 
 .button--large {
@@ -1052,7 +1052,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .contact--h2 {

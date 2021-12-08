@@ -10,9 +10,9 @@ body{
 }
 .formsection{
   background-color: $color-pink;
-  width:100%;
+  width: 100%;
   @include flexBox(column, center, space-between);
-  padding:1rem;
+  padding:2rem;
 }
 .contact--h2{
 font-weight: bold;
