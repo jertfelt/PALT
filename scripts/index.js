@@ -71,3 +71,13 @@ Menu();
 }
 flippedCard();
 
+
+//Skicka-button confirmation (validation in form)
+function logSubmit(event) {
+  log.textContent = "Tack! Vi hör av oss!";
+  event.preventDefault();
+}
+let form = document.getElementById('form');
+let messageUser = document.getElementById('log');
+form.addEventListener('submit',logSubmit);
+

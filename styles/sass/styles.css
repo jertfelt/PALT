@@ -1039,7 +1039,7 @@ body {
 
 @media only screen and (min-width: 991px) {
   .contact--h2 {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -1060,7 +1060,7 @@ body {
   width: 100%;
 }
 
-.contact__form legend p {
+.contact__form p {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.8rem;
@@ -1070,7 +1070,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .contact__form legend p {
+  .contact__form p {
     width: 100%;
   }
 }
@@ -1092,12 +1092,11 @@ body {
   outline: none;
   background: transparent;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 0;
-  margin: 0;
   display: block;
-  min-width: 80%;
+  min-width: 100%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   padding: 12px 55px 15px 15px;
@@ -1108,6 +1107,7 @@ body {
 
 .inputWrapper:after {
   position: absolute;
+  background: transparent;
   right: 0;
   top: 2px;
   width: 50px;
@@ -1117,9 +1117,7 @@ body {
   text-align: center;
   font-size: 1em;
   font-weight: bold;
-  -webkit-transition: .5s;
-  transition: .5s;
-  margin: auto;
+  pointer-events: none;
 }
 
 .input {
@@ -1177,6 +1175,14 @@ body {
       flex-basis: 100%;
 }
 
+#log {
+  padding-top: 1rem;
+}
+
+.picture-info-map {
+  max-width: 1200px;
+}
+
 .picture-info {
   background-color: black;
   padding-bottom: 1rem;
@@ -1184,6 +1190,8 @@ body {
 
 .picture-info img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1213,6 +1221,18 @@ body {
 @media only screen and (min-width: 991px) {
   .picture-info img {
     width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .picture-info {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .picture-info {
+    height: 300px;
   }
 }
 
@@ -1297,6 +1317,12 @@ body {
 .googlemap {
   width: 100%;
   height: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+  .googlemap {
+    margin-top: 2rem;
+  }
 }
 
 @media only screen and (min-width: 991px) {
