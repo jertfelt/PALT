@@ -1,0 +1,13 @@
+.userinput{
+  width:100%;
+  padding: 15px;
+  background-color: $color-background;
+  z-index: 2;
+  font-family: $font-primary;
+  font-size: 1rem;
+  font-weight:bold;
+  border-color: $color-pink;
+  border-style:solid;
+  height: 50px;
+  border-radius: 5px;
+}

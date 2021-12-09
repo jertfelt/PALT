@@ -1,298 +1,269 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/sass/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@glidejs/glide@3.3.0/dist/css/glide.core.min.css"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/sass/styles.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous" />
 
-    <title>PALT BYRÅ 2022</title>
-  </head>
+		<link rel="stylesheet"
+			href="https://unpkg.com/@glidejs/glide@3.3.0/dist/css/glide.core.min.css" />
+		<title>PALT BYRÅ 2022</title>
+	</head>
 
-  <body>
-    <header class="header header--transparent header--modified">
-      <div class="container">
-        <nav class="header__nav">
-          <div class="header__logo">
-            <a href="/" class="link--white header__logo">
-              <img
-                src="styles/sass/img/palt-logo-white.svg"
-                alt="Palt logo"
-                class="logo--white"
-              />
-              <img
-                src="styles/sass/img/palt-logo-black.svg"
-                alt="Palt logo"
-                class="logo--black"
-              />
-            </a>
-          </div>
-          <button class="menu-toggle">
-            <span></span>
-          </button>
-          <ul class="main-menu">
-            <li>
-              <a href="/index.html" class="link link--white text--xs text"
-                >Hem</a
-              >
-            </li>
-            <li>
-              <a href="about.html" class="link link--white text--xs text"
-                >Om oss</a
-              >
-            </li>
-            <li>
-              <a href="cases.html" class="link link--white text--xs text"
-                >Cases</a
-              >
-            </li>
-            <li>
-              <a href="contact.html" class="link link--white text--xs text"
-                >Kontakt</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <section class="hero__wrap">
-      <div class="container">
-        <div class="hero__info">
-          <h1 class="text--white">PALT är en digitalbyrå</h1>
-          <p class="text--white text--s">
-            som är specialiserad på att ta fram smarta och responsiva lösningar
-            för ditt företag
-          </p>
-          <a href="contact.html" class="button button--pink button--large"
-            >Kontakta oss</a
-          >
-        </div>
-      </div>
-    </section>
-    <section class="homepage__features">
-      <div class="container">
-        <a href="cases.html" target="_blank">
-          <div class="homepage__feature homepage__feature--cases">
-            <h2 class="text--white">Det här är vad vi gör</h2>
-            <p class="text text--l tex--bold text--white text--cursive">
-              CASES
-            </p>
-            <div class="folder">
-              <div class="folder-inside">
-                <h4 class="center text--black">PALT</h4>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section class="homepage__slider">
-      <div class="container">
-        <div class="glide text--altblack">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <div class="homepage__slider__info">
-					<div class="center">
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--white"></i>
+	<body>
+		<header class="header header--transparent header--modified">
+			<div class="container">
+				<nav class="header__nav">
+					<div class="header__logo">
+						<a href="/" class="link--white header__logo">
+							<img src="styles/sass/img/palt-logo-white.svg" alt="Palt logo"
+								class="logo--white" />
+							<img src="styles/sass/img/palt-logo-black.svg" alt="Palt logo"
+								class="logo--black" />
+						</a>
 					</div>
-                  <p class="text--l text--bold text--white center">Spotify</p>
-                  <blockquote class="text--s text--pink text--bold center">
-                    PALT hjälpte oss att ta fram en helt ny hemsida och vi är super nöjda med resultatet.
-                  </blockquote>
-                  <p class="text--s text--white center">VD Spotify</p>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="homepage__slider__info">
-					<div class="center">
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--pink"></i>
+					<button class="menu-toggle">
+						<span></span>
+					</button>
+					<ul class="main-menu">
+						<li>
+							<a href="/index.html" class="link link--white text--xs text">Hem</a>
+						</li>
+						<li>
+							<a href="about.html" class="link link--white text--xs text">Om oss</a>
+						</li>
+						<li>
+							<a href="cases.html" class="link link--white text--xs text">Cases</a>
+						</li>
+						<li>
+							<a href="contact.html" class="link link--white text--xs text">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="hero__wrap">
+			<div class="container">
+				<div class="hero__info">
+					<h1 class="text--white">PALT är en digitalbyrå</h1>
+					<p class="text--white text--s">
+						som är specialiserad på att ta fram smarta och responsiva lösningar
+						för ditt företag
+					</p>
+					<a href="contact.html" class="button button--pink button--large">Kontakta
+						oss</a>
+				</div>
+			</div>
+		</section>
+		<section class="homepage__features">
+			<div class="container">
+				<a href="cases.html" target="_blank">
+					<div class="homepage__feature homepage__feature--cases">
+						<h2 class="text--white">Det här är vad vi gör</h2>
+						<p class="text text--l tex--bold text--white text--cursive">
+							CASES
+						</p>
+						<div class="folder">
+							<div class="folder-inside">
+								<h4 class="center text--black">PALT</h4>
+							</div>
+						</div>
 					</div>
-                  <p class="text--l text--bold text--white center">H&M</p>
-                  <blockquote class="text--s text--pink text--bold center">
-                    Bra jobb! De är snabba, tydliga och kreativa individer som jag varmt rekommenderar!
-                  </blockquote>
-                  <p class="text--s text--white center">VD H&M</p>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="homepage__slider__info">
-					<div class="center">
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--pink"></i>
-						<i class="fas fa-star text--white"></i>
+				</a>
+			</div>
+		</section>
+		<section class="homepage__slider">
+			<div class="container">
+				<div class="glide text--altblack">
+					<div class="glide__track" data-glide-el="track">
+						<ul class="glide__slides">
+							<li class="glide__slide">
+								<div class="homepage__slider__info">
+									<div class="center">
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--white"></i>
+									</div>
+									<p class="text--l text--bold text--white center">Spotify</p>
+									<blockquote class="text--s text--pink text--bold center">
+										PALT hjälpte oss att ta fram en helt ny hemsida och vi är super nöjda
+										med
+										resultatet.
+									</blockquote>
+									<p class="text--s text--white center">VD Spotify</p>
+								</div>
+							</li>
+							<li class="glide__slide">
+								<div class="homepage__slider__info">
+									<div class="center">
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--pink"></i>
+									</div>
+									<p class="text--l text--bold text--white center">H&M</p>
+									<blockquote class="text--s text--pink text--bold center">
+										Bra jobb! De är snabba, tydliga och kreativa individer som jag varmt
+										rekommenderar!
+									</blockquote>
+									<p class="text--s text--white center">VD H&M</p>
+								</div>
+							</li>
+							<li class="glide__slide">
+								<div class="homepage__slider__info">
+									<div class="center">
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--pink"></i>
+										<i class="fas fa-star text--white"></i>
+									</div>
+									<p class="text--l text--bold text--white center">Google</p>
+									<blockquote class="text--s text--pink text--bold center">
+										You guys are awesome! You did a better job than Mark Zuckerberg!
+									</blockquote>
+									<p class="text--s text--white center">VD Google</p>
+								</div>
+							</li>
+						</ul>
 					</div>
-                  <p class="text--l text--bold text--white center">Google</p>
-                  <blockquote class="text--s text--pink text--bold center">
-                    You guys are awesome! You did a better job than Mark Zuckerberg!
-                  </blockquote>
-                  <p class="text--s text--white center">VD Google</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="glide__bullets" data-glide-el="controls[nav]">
-            <button class="glide__bullet" data-glide-dir="=0"></button>
-            <button class="glide__bullet" data-glide-dir="=1"></button>
-            <button class="glide__bullet" data-glide-dir="=2"></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="homepage__features">
-      <div class="container">
-        <a href="about.html" target="_blank">
-          <div class="homepage__feature homepage__feature--about">
-            <h2 class="text--white">Det här är vi</h2>
-            <p class="text text--l tex--bold text--cursive text--white">
-              OM OSS
-            </p>
-            <div class="developer">
-              <img src="styles/sass/img/developer.svg" alt="Developer" />
-              <div class="developer__laptop">
-                <img
-                  src="styles/sass/img/laptop.svg"
-                  alt="Laptop"
-                  class="laptop-animation"
-                />
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section class="homepage__info">
-      <div class="container">
-        <h3 class="text--black center">Våra tjänster</h3>
-        <ul class="homepage__services">
-          <li>
-            <div class="homepage__services__cover">
-              <img
-                src="styles/sass/img/icon-programming.svg"
-                alt="Webbutveckling"
-              />
-            </div>
-            <div class="homepage__services__info">
-              <h4 class="center">Webbutveckling</h4>
-              <p class="font--xs text--bold center">
-                Vi bygger digitala hantverk i WordPress
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="homepage__services__cover">
-              <img
-                src="styles/sass/img/icon-hoisting.svg"
-                alt="Drift & förvaltning"
-              />
-            </div>
+					<div class="glide__bullets" data-glide-el="controls[nav]">
+						<button class="glide__bullet" data-glide-dir="=0"></button>
+						<button class="glide__bullet" data-glide-dir="=1"></button>
+						<button class="glide__bullet" data-glide-dir="=2"></button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="homepage__features">
+			<div class="container">
+				<a href="about.html" target="_blank">
+					<div class="homepage__feature homepage__feature--about">
+						<h2 class="text--white">Det här är vi</h2>
+						<p class="text text--l tex--bold text--cursive text--white">
+							OM OSS
+						</p>
+						<div class="developer">
+							<img src="styles/sass/img/developer.svg" alt="Developer" />
+							<div class="developer__laptop">
+								<img src="styles/sass/img/laptop.svg" alt="Laptop"
+									class="laptop-animation" />
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</section>
+		<section class="homepage__info">
+			<div class="container">
+				<h3 class="text--black center">Våra tjänster</h3>
+				<ul class="homepage__services">
+					<li>
+						<div class="homepage__services__cover">
+							<img src="styles/sass/img/icon-programming.svg" alt="Webbutveckling" />
+						</div>
+						<div class="homepage__services__info">
+							<h4 class="center">Webbutveckling</h4>
+							<p class="font--xs text--bold center">
+								Vi bygger digitala hantverk i WordPress
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="homepage__services__cover">
+							<img src="styles/sass/img/icon-hoisting.svg" alt="Drift & förvaltning" />
+						</div>
 
-            <div class="homepage__services__info">
-              <h4 class="center">Drift & förvaltning</h4>
-              <p class="font--xs text--bold center">
-                Hosting, support och service av din webbplats
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="homepage__services__cover">
-              <img
-                src="styles/sass/img/icon-optimization.svg"
-                alt="Konvertering och optimering"
-              />
-            </div>
-            <div class="homepage__services__info">
-              <h4 class="center">Analys och strategi</h4>
-              <p class="font--xs text--bold center">
-                Genomtänkt analys och framåtriktad webbstrategi
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    
-    <footer>
-     <div class="footer-container1">
-      <div class="footer-content text--bold text--black">
-       <h2 class="text--m">
-        Hör av dig!
-       </h2>
-       <div class="form-object">
+						<div class="homepage__services__info">
+							<h4 class="center">Drift & förvaltning</h4>
+							<p class="font--xs text--bold center">
+								Hosting, support och service av din webbplats
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="homepage__services__cover">
+							<img src="styles/sass/img/icon-optimization.svg" alt="Konvertering och
+								optimering" />
+						</div>
+						<div class="homepage__services__info">
+							<h4 class="center">Analys och strategi</h4>
+							<p class="font--xs text--bold center">
+								Genomtänkt analys och framåtriktad webbstrategi
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-        <label for="name">namn</label>
-        <input type="text" name="name" placeholder="Name">
-        <label for="email">e-mail</label>
-        <input type="email" name="email" placeholder="e-mail">
-        <button class="button--black">Skicka</button>
+		<footer class="footer">
+			<div class="footer-container1">
+				<div class="container">
+					<div class="footer-content text--bold text--black">
+						<h2 class="text--m">
+							Hör av dig!
+						</h2>
+						<div class="form-object">
+							<label for="name">Namn</label>
+							<input type="text" name="name" placeholder="Name" class="userinput">
+							<label for="email">E-mail</label>
+							<input type="email" name="email" placeholder="E-mail" class="userinput">
+							<button class="button button--black">Skicka</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-container2 text--white text--xxs text--bold">
+				<div class="footer-object1">
+					<p>PALT AB</p>
+					<p>paltvägen 33</p>
+					<p>001 00 Norrland</p>
+				</div>
 
-       </div>
-  </div>
-      </div>
-    <div class="footer-container2 text--white text--xxs text--bold">
-      <div class="footer-object1">
-      <p>PALT AB</p>
-      <p>paltvägen 33</p>
-      <p>001 00 Norrland</p>
-      </div>
+				<div class="footer-object2">
+					<a href="mailto:info@palt.se">info@palt.se</a>
+					<div class="icon-div">
+						<a href="https://www.linkedin.com/" target="_blank">
+							<i class="fab fa-linkedin fa-3x"></i>
+						</a>
+						<a href="https://www.instagram.com/" target="_blank">
+							<i class="fab fa-instagram fa-3x"></i>
+						</a>
+					</div>
+				</div>
+				<div class="footer-object3">
+					<a href="index.html"><span class="selected">Hem</span></a>
+					<a href="about.html">Om oss</a>
+					<a href="cases.html">Cases</a>
+					<a href="contact.html">Kontakt</a>
+				</div>
+			</div>
+		</footer>
+		<script src="scripts/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+		<script>
+		new Glide( ".glide", {
+			autoplay: 3000
+		} ).mount();
+	</script>
+	</body>
 
-      <div class="footer-object2">
-        <a href="#">info@palt.se</a>
-
-        <div class="icon-div">
-        <a href="https://www.linkedin.com/">
-        <i class="fab fa-linkedin fa-3x"></i></a>
-        <a href="https://www.instagram.com/" target="_blank">
-        <i class="fab fa-instagram fa-3x"></i></a>
-      </div>
-
-      </div>
-      <div class="footer-object3">
-        <a href="index.html"><span class="selected">Hem</span></a>
-        <a href="about.html">Om oss</a>
-        <a href="cases.html">Cases</a>
-        <a href="contact.html">Kontakt</a>
-      
-    </div>
-    </footer>
-    <script src="scripts/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-      new Glide(".glide", {
-	  	autoplay: 3000
-	  }).mount();
-    </script>
-  </body>
 </html>

@@ -25,7 +25,12 @@ h3 {
 }
 
 h4 {
-    @include font-size(36);
+    @include font-size(22);
+    line-height: 28px;
+    @include breakpoint(small-max) {
+      @include font-size(36);
+      line-height: 42px;
+    }
 }
 
 h5 {
@@ -36,46 +41,17 @@ h6 {
     @include font-size(16);
 }
 
-//primary font in different sizes:
-.primary {
-  font-family: $font-primary;
-
-  &--xl {
-    @include font-size(64);
-    line-height: 1.2rem;
-  }
-  &--l {
-    @include font-size(50);
-    line-height: 1.2rem;
-  }
-  &--m {
-    font-size: 44px;
-    line-height: 1.2rem;
-  }
-  &--s {
-    @include font-size(36);
-    line-height: 1.2rem;
-  }
-  &--xs {
-    @include font-size(24);
-    line-height: 1.8rem;
-  }
-  &--xxs {
-    @include font-size(16);
-    line-height: 1.5rem;
-  }
-}
 
 //pageheader (consists of pageheader-logo + pageheader-primary and then pageheader-text
 
-.pageheader--primary {
-  @include font-size(64);
-  font-family: $font-primary;
-  line-height: 0.8rem;
-}
-.pageheader_text {
-  @include font-size(36);
-  font-family: $font-primary;
-  font-weight: bold;
-  line-height: 2.4rem;
-}
+// .pageheader--primary {
+//   @include font-size(64);
+//   font-family: $font-primary;
+//   line-height: 0.8rem;
+// }
+// .pageheader_text {
+//   @include font-size(36);
+//   font-family: $font-primary;
+//   font-weight: bold;
+//   line-height: 2.4rem;
+// }

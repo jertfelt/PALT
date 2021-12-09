@@ -1,175 +1,158 @@
-body{
+body {
   background-color: $color-background;
 }
-.contact__main{
+.contact__main {
   @include flexBox(column, center, space-between);
   margin: 0 auto;
-  padding:0rem;
-  @include breakpoint (small-max) {
-    padding:2rem;}
-}
-.formsection{
-  background-color: $color-pink;
-  width: 100%;
-  padding:2rem;
-  @include breakpoint (small-max) {
-    margin-bottom:2rem;}
-  
-}
-.contact--h2{
-font-weight: bold;
-line-height: 3rem;
-text-align: left;
-@include font-size (40);
-margin-bottom:1rem;
-@include breakpoint (medium-tablet-max){
-  width:60%;
-}
-}
-.contact__form{
-  @include flexBox(column, flex-start, space-between);
-  width:100%;
-  p{
-    @include font-size (24);
-    line-height: 1.8rem;
-    text-align:left;
-    margin-bottom:1rem;
-    width:60%;
-    @include breakpoint (small-max){
-      width:100%;
-    }
+  padding: 0rem;
+  @include breakpoint(small-max) {
+    padding: 2rem;
   }
 }
-.inputWrapper{
+.formsection {
+  background-color: $color-pink;
+  width: 100%;
+  padding: 2rem;
+  @include breakpoint(small-max) {
+    margin-bottom: 2rem;
+  }
+
+  p.text {
+    margin: 20px 0 30px;
+  }
+}
+
+.contact__form {
+  @include flexBox(column, flex-start, space-between);
+  width: 100%;
+  padding-top: 20px;
+}
+.inputWrapper {
   position: relative;
   display: block;
   background-color: $color-background;
   z-index: 2;
   margin-bottom: 1rem;
-  width:100%;
+  width: 100%;
   cursor: pointer;
-  select{
+  select {
+  @include font-size(18);
     font-weight: bold;
-    font-family:$font-primary;
+    font-family: $font-primary;
     border: none;
     outline: none;
     background: transparent;
     appearance: none;
     border-radius: 0;
     display: block;
-    min-width:100%;
-    flex-basis:100%;
-    padding: 12px 55px 15px 15px;
-    font-size: 18px;
+    min-width: 100%;
+    flex-basis: 100%;
+    padding: 15px;
     color: $color-alt-black;
     cursor: pointer;
   }
- &:after{
-position: absolute;
-background: transparent;
-right: 0;
-top: 2px;
-width: 50px;
-height: 100%;
-line-height: 38px;
-content: '\2228';
-text-align: center;
-font-size:1em;
-font-weight: bold;
-pointer-events: none;
+  &:after {
+  @include font-size(24);
+    position: absolute;
+    background: transparent;
+    right: 0;
+    top: 2px;
+    width: 50px;
+    height: 100%;
+    line-height: 38px;
+    content: "\2228";
+    text-align: center;
+    font-weight: bold;
+    pointer-events: none;
+  }
 }
-}
-.input{
+.input {
   @include flexBox(column, center, space-between);
-  width:100%;
+  width: 100%;
+  margin: 1rem 0;
 }
-.userinput{
-  width:100%;
-  padding: 12px 55px 15px 15px;
+
+.txtuserinput {
+  @include font-size(16);
+  width: 100%;
+  padding: 15px;
   background-color: $color-background;
   z-index: 2;
+  border-radius: 5px;
   font-family: $font-primary;
-  font-size: 1rem;
-  font-weight:bold;
-  margin:1rem;
+  font-weight: bold;
   border-color: $color-pink;
-  border-style:solid;
+  border-style: solid;
 }
-.txtuserinput{
-  width:100%;
-  padding: 12px 55px 15px 15px;
-  background-color: $color-background;
-  z-index: 2;
-  font-family: $font-primary;
-  font-size: 1rem;
-  font-weight:bold;
-  margin:1rem;
-  border-color: $color-pink;
-  border-style:solid;
-}
-#submit--contactform{
-  align-self:center;
-  max-width:200px;
-  min-width:140px;
+#submit--contactform {
+  align-self: center;
+  max-width: 200px;
+  min-width: 140px;
   padding: 15px;
   text-align: center;
-  flex-basis:100%;
-} 
-#log{
-padding-top:1rem;
+  flex-basis: 100%;
+}
+#log {
+  padding-top: 1rem;
 }
 
-.picture-info-map{
-  max-width: 1200px;
+.picture-info-map {
+  width: 100%;
 }
 
-.picture-info{
+.picture-info {
   background-color: $color-black;
-padding-bottom:1rem;
-  img{
-    width:100%;
-    object-fit: cover; 
+  padding-bottom: 1rem;
+  height: auto;
+  img {
+    width: 100%;
+    object-fit: cover;
   }
-@include breakpoint(xsmall-max){
-  @include flexBox(row, stretch, flex-start);
-  padding-bottom:0rem;
-  margin-top:0%;
-  width:100%;
-  img{width:50%;
-  }
-}
-@include breakpoint(medium-tablet-max){
-  img{width:70%;}
-}
-@include breakpoint(extra-large-max){
-  height:300px;
-}
-@media only screen and (min-width: $screen-xl){
-  height:300px;
-}
-}
-  .contactdetails__div{
-    @include flexBox(column,flex-start,space-between);
-    margin:2rem;
-    @include breakpoint(medium-tablet-max){
-      @include flexBox(column,flex-start,center); 
+  @include breakpoint(xsmall-max) {
+    @include flexBox(row, stretch, flex-start);
+    padding-bottom: 0rem;
+    margin-top: 0%;
+    width: 100%;
+    img {
+      width: 50%;
     }
-    .contactdetails__row{
-    @include flexBox(row,center,space-between);
-    margin:1rem;}
-    p {margin-left:1rem;}
-    @include breakpoint(xsmall-max){
-      margin:1rem;}
-    .contacticon1{
-      @include flexBox(row,flex-start,space-between);}
+  }
+  @include breakpoint(medium-tablet-max) {
+    img {
+      width: 70%;
+      max-height: 300px;
+    }
   }
 
-.googlemap{ 
-width:100%;
-height:300px;
-@include breakpoint(small-max){
-  margin-top:2rem;}
-@include breakpoint(medium-tablet-max){
-  height:400px;
 }
+.contactdetails__div {
+  @include flexBox(column, flex-start, space-between);
+  margin: 2rem;
+  @include breakpoint(medium-tablet-max) {
+    @include flexBox(column, flex-start, center);
+  }
+  .contactdetails__row {
+    @include flexBox(row, center, space-between);
+    margin: 1rem;
+  }
+  p {
+    margin-left: 1rem;
+  }
+  @include breakpoint(xsmall-max) {
+    margin: 1rem;
+  }
+  .contacticon1 {
+    @include flexBox(row, flex-start, space-between);
+  }
+}
+
+.googlemap {
+  width: 100%;
+  height: 300px;
+  @include breakpoint(small-max) {
+    margin-top: 2rem;
+  }
+  @include breakpoint(medium-tablet-max) {
+    height: 400px;
+  }
 }

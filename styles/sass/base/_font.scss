@@ -24,7 +24,6 @@
 
   &--bold {
     font-weight: bold;
-    line-height: 1.5rem;
   }
 
   &--cursive {
@@ -56,7 +55,11 @@
 
   &--xs {
     @include font-size(18);
-    font-weight: bold;
+    line-height: 22px;
+    @include breakpoint(small-max) {
+      @include font-size(24);
+      line-height: 30px;
+    }
   }
   &--xxs {
     @include font-size(16);
