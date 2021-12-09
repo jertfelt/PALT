@@ -11,37 +11,41 @@ body{
 .formsection{
   background-color: $color-pink;
   width: 100%;
-  @include flexBox(column, center, space-between);
   padding:2rem;
+  @include breakpoint (small-max) {
+    margin-bottom:2rem;}
+  
 }
 .contact--h2{
 font-weight: bold;
 line-height: 3rem;
 text-align: left;
 @include font-size (40);
+margin-bottom:1rem;
+@include breakpoint (medium-tablet-max){
+  width:60%;
 }
-
+}
 .contact__form{
-  @include flexBox(column, center, space-between);
+  @include flexBox(column, flex-start, space-between);
   width:100%;
-  margin:5%;
-  legend p{
-    margin-bottom:5%; 
+  p{
     @include font-size (24);
     line-height: 1.8rem;
+    text-align:left;
+    margin-bottom:1rem;
+    width:60%;
     @include breakpoint (small-max){
-    //håller på här!
+      width:100%;
     }
   }
 }
-
 .inputWrapper{
   position: relative;
   display: block;
-  margin: 0 auto;
   background-color: $color-background;
-  z-index: 10;
-  margin-bottom: 18px;
+  z-index: 2;
+  margin-bottom: 1rem;
   width:100%;
   cursor: pointer;
   select{
@@ -50,39 +54,30 @@ text-align: left;
     border: none;
     outline: none;
     background: transparent;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     border-radius: 0;
-    margin: 0;
     display: block;
-    min-width:80%;
+    min-width:100%;
     flex-basis:100%;
     padding: 12px 55px 15px 15px;
     font-size: 18px;
     color: $color-alt-black;
     cursor: pointer;
   }
-  &:after{
-    position: absolute;
-    right: 0;
-    top: 2px;
-    width: 50px;
-    height: 100%;
-    line-height: 38px;
-    content: '\2228';
-    text-align: center;
-    font-size:1em;
-    font-weight: bold;
-    transition:.5s;
-    margin:auto;
-  }
-
-// select:hover{
-// select:after{
-// transform:rotate(-180deg);
-//  }}
-// //returning to this if time 
+ &:after{
+position: absolute;
+background: transparent;
+right: 0;
+top: 2px;
+width: 50px;
+height: 100%;
+line-height: 38px;
+content: '\2228';
+text-align: center;
+font-size:1em;
+font-weight: bold;
+pointer-events: none;
+}
 }
 .input{
   @include flexBox(column, center, space-between);
@@ -92,17 +87,13 @@ text-align: left;
   width:100%;
   padding: 12px 55px 15px 15px;
   background-color: $color-background;
-  z-index: 3;
+  z-index: 2;
   font-family: $font-primary;
   font-size: 1rem;
   font-weight:bold;
   margin:1rem;
   border-color: $color-pink;
   border-style:solid;
-}
-::placeholder {
-  opacity:1;
-  color: $color-alt-black;
 }
 .txtuserinput{
   width:100%;
@@ -117,35 +108,52 @@ text-align: left;
   border-style:solid;
 }
 #submit--contactform{
+  align-self:center;
   max-width:200px;
   min-width:140px;
   padding: 15px;
   text-align: center;
   flex-basis:100%;
-  // :hover{  //fungerar inte?
-  //   z-index:300;
-  //   background-color: $color-grey;
-  //   color:$color-black;
-  // }
-} //lägg in meddelande i js
+} 
+#log{
+padding-top:1rem;
+}
+
+.picture-info-map{
+  max-width: 1200px;
+}
+
 .picture-info{
   background-color: $color-black;
 padding-bottom:1rem;
   img{
     width:100%;
+    object-fit: cover; 
   }
 @include breakpoint(xsmall-max){
-  @include flexBox(row, strecth, flex-start);
+  @include flexBox(row, stretch, flex-start);
   padding-bottom:0rem;
   margin-top:0%;
   width:100%;
   img{width:50%;
   }
-}}
- //eventuellt läg till kul hover här också
+}
+@include breakpoint(medium-tablet-max){
+  img{width:70%;}
+}
+@include breakpoint(extra-large-max){
+  height:300px;
+}
+@media only screen and (min-width: $screen-xl){
+  height:300px;
+}
+}
   .contactdetails__div{
     @include flexBox(column,flex-start,space-between);
     margin:2rem;
+    @include breakpoint(medium-tablet-max){
+      @include flexBox(column,flex-start,center); 
+    }
     .contactdetails__row{
     @include flexBox(row,center,space-between);
     margin:1rem;}
@@ -156,5 +164,12 @@ padding-bottom:1rem;
       @include flexBox(row,flex-start,space-between);}
   }
 
-.googlemap{
-  width:100%;}
+.googlemap{ 
+width:100%;
+height:300px;
+@include breakpoint(small-max){
+  margin-top:2rem;}
+@include breakpoint(medium-tablet-max){
+  height:400px;
+}
+}
