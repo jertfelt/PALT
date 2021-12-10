@@ -144,3 +144,13 @@
     }
   }
 }
+
+.this-is-palt{
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  @include font-size(40);
+   line-height: 48px;
+     @include breakpoint(small-max){
+         @include font-size(64);
+     line-height: 74px;
+ }}

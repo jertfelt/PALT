@@ -199,6 +199,10 @@ a {
   color: #EEB5B5;
 }
 
+.text--darker-pink {
+  color: #8d6c6c;
+}
+
 .text--altblack {
   background-color: #282828;
 }
@@ -642,6 +646,10 @@ h6 {
   color: black;
 }
 
+.header--modified.fade-in a.is-active {
+  color: #8d6c6c;
+}
+
 .header--modified.fade-in a:hover {
   color: #EEB5B5;
 }
@@ -705,7 +713,7 @@ h6 {
 }
 
 .main-menu a.is-active {
-  color: #EEB5B5;
+  color: #ffc5c5;
 }
 
 .main-menu li:first-child {
@@ -1574,6 +1582,22 @@ body {
 .pink__box--about div .card .flipped {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.this-is-palt {
+  font-family: "Unna", Georgia, serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+  .this-is-palt {
+    font-size: 64px;
+    font-size: 4rem;
+    line-height: 74px;
+  }
 }
 
 .homepage__info {

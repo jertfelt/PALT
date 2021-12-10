@@ -54,6 +54,9 @@
 
     a {
       color: $color-black;
+      &.is-active {
+        color: $color-pink-whitebackground;
+        }
       &:hover {
         color: $color-pink;
       }
@@ -94,7 +97,8 @@
       color: $color-white;
     }
 	&.is-active {
-	color: $color-pink;
+	color: $color-pink-greybackground;
+
 	}
   }
 
