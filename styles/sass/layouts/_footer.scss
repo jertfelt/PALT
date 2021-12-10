@@ -1,81 +1,101 @@
- .footer-container1{
-  @include flexBox(row,flex-start,center);
+.footer {
   background-color: $color-pink;
+  margin-top: 0;
+  @include breakpoint(medium-tablet-max) {
+   margin-top: 50px;
+  }
+}
+.footer-container1 {
+  @include flexBox(row, flex-start, center);
+  padding: 20px;
+  @include breakpoint(medium-tablet-max) {
+    padding: 0 20px;
+  }
+  .footer-content {
+    height: inherit;
+    flex-basis: 100%;
+    @include flexBox(column, flex-start, center);
+    @include breakpoint(medium-tablet-max) {
+      height: 180px;
+    }
 
-  .footer-content{
-    @include flexBox(column,flex-start,space-around);
-    height: 180px;
-    flex-basis: 70%;
+    .form-object {
+      @include flexBox(column, flex-start, space-between);
+      width: 100%;
+      margin-top: 20px;
+      @include breakpoint(medium-tablet-max) {
+        @include flexBox(row, flex-start, center);
+        margin-top: 0;
+      }
+      input[type="email"] {
+        margin: 20px 0 20px 0;
+        @include breakpoint(medium-tablet-max) {
+          margin: 0 0 0 10px;
+        }
+      }
 
-  .form-object{
-    @include flexBox(row,flex-start,space-between);
-    width: 100%;
-    input[type="email"]{
-      margin-left: 10px;
-    }
-    input{
-      height: 40px;
-      width:90%;
-      padding:10px;
-    }
-    button{
-      height: 40px;
-      width:90%;
-      margin-left: 10px;
-      color:$color-white;
-      text-transform: uppercase
-    }
-    label{
-      display: none;
+      button {
+        width: 100%;
+        margin-left: 0;
+        @include breakpoint(medium-tablet-max) {
+          margin-left: 10px;
+        }
+      }
+      label {
+        display: none;
+      }
     }
   }
 }
-}
-.footer-container2{
-  @include flexBox(row,center,flex-start);
+.footer-container2 {
+  @include flexBox(row, center, flex-start);
   height: 200px;
-  background-color:$color-black;
+  background-color: $color-black;
 
-  .footer-object1{
-    @include flexBox(column,center,flex-start);
+  .footer-object1 {
+    @include flexBox(column, center, flex-start);
     text-align: left;
     flex-basis: 100%;
-    p{
+    p {
       display: block;
-      width:150px;
-      padding:2px;
+      width: 150px;
+      padding: 2px;
     }
   }
-  .footer-object2{
-    @include flexBox(column,center,flex-start);
+  .footer-object2 {
+    @include flexBox(column, center, flex-start);
     flex-basis: 100%;
-    a{
+    a {
       color: $color-white;
       text-decoration-line: underline;
       margin-bottom: 5px;
     }
-    .icon-div{
+    .icon-div {
       display: inline-block;
-      a i {
-        padding:3px;
-        height: 100%;
+      a {
+        &:hover {
+          color: $color-pink;
+        }
+        i {
+          padding: 3px;
+          height: 100%;
+        }
       }
     }
   }
-  .footer-object3{
-    @include flexBox(column,center,flex-start);
+  .footer-object3 {
+    @include flexBox(column, center, flex-start);
     flex-basis: 100%;
-    a{
+    a {
       display: block;
       color: $color-white;
       width: 80px;
-      &:hover{
-        color:$color-pink;
+      &:hover {
+        color: $color-pink;
       }
-      .selected{
+      .selected {
         color: $color-pink;
       }
     }
-  } 
-  
+  }
 }

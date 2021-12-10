@@ -11,6 +11,7 @@
   letter-spacing: 0.1rem;
   color: $color-black;
   cursor: pointer;
+  height: 50px;
 
   &--pink {
     background-color: $color-pink;
@@ -25,13 +26,6 @@
   &--black {
     color:$color-white;
     font-family: $font-primary;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 4px;
-    text-align: center;
-    border-style: solid;
-    letter-spacing: 0.1rem;
-    padding: 0.6rem 1rem 0.6rem 1rem;
     background-color: $color-black;
     border-color: $color-black;
 
@@ -43,8 +37,10 @@
 
   &--large {
     padding: 16px 30px;
+    height: auto;
     @include breakpoint(small-max) {
       padding: 22px 90px;
+      height: 62px;
     }
   }
 
@@ -174,8 +170,4 @@
   margin:1rem;
   border-color: $color-pink;
   border-style:solid;
-}
-::placeholder {
-  opacity:1;
-  color: $color-alt-black;
 }
