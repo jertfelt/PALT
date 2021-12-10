@@ -13,6 +13,9 @@
   &--pink {
     color: $color-pink;
   }
+  &--darker-pink {
+    color: $color-pink-whitebackground;
+  }
 
   &--altblack {
     background-color: $color-alt-black;
