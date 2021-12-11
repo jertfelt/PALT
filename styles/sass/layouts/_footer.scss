@@ -88,14 +88,7 @@
     flex-basis: 100%;
     a {
       display: block;
-      color: $color-white;
       width: 80px;
-      &:hover {
-        color: $color-pink;
-      }
-      .selected {
-        color: $color-pink;
-      }
     }
   }
 }
