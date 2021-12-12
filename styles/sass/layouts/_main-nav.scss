@@ -1,0 +1,75 @@
+.menu-toggle {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  position: absolute;
+  right: 30px;
+  top: 32px;
+  padding: 0;
+
+  &.menu-open {
+    span {
+      background: transparent;
+
+      &:before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &:after {
+        bottom: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @include breakpoint(small-max) {
+    display: none;
+  }
+
+  span {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    height: 3px;
+    background: $color-black;
+    width: 100%;
+    transition: 0.3s all ease-out;
+
+    &:before {
+      content: "";
+      top: -7px;
+      height: 3px;
+      background: $color-black;
+      position: absolute;
+      width: 100%;
+      right: 0;
+      transition: 0.3s all ease-out;
+    }
+
+    &:after {
+      content: "";
+      bottom: -7px;
+      height: 3px;
+      background: $color-black;
+      position: absolute;
+      width: 100%;
+      right: 0;
+      transition: 0.3s all ease-out;
+    }
+  }
+
+  &.fade-in-nav {
+    span {
+      &:before {
+        background: $color-black;
+      }
+      &:after {
+        background: $color-black;
+      }
+    }
+  }
+}
