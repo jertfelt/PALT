@@ -94,7 +94,6 @@
           action="#"
           id="form">
           <div class="inputWrapper">
-           
             <select name="options-selection" required>
               <option value="">Hur kan vi hjälpa dig?</option>
               <option id="option-1" value="1">Köp av produkt/tjänst</option>
@@ -103,49 +102,68 @@
               <option id="option-4" value="4">Övrigt</option>
             </select>
           </div>
-          <label class="input"><input
+          <span class="inputs text--bold">
+          <label name="sendername">
+            Namn:    
+          </label>
+            <input
               type="text"
               name="sendername"
               maxlength="60"
               placeholder="Namn:"
-              class="userinput"
+              class="userinput "
               />
+          </span>
+          <span class="inputs text--bold">
+          <label name="name">
+            Mail: 
           </label>
-          <label class="input">
             <input
               type="text"
+              name="mail"
               id="sendermail"
               maxlength="60"
               placeholder="me@example.com"
               class="userinput"
               />
+         </span>
+          <span class="inputs text--bold">
+          <label name="phone">
+            Telefon:
           </label>
-          <label class="input">
             <input
               type="text"
               id="senderphone"
-              placeholder="Telefon:"
+              name="phone"
+              placeholder="+46:"
               pattern="[0-9]+"
               class="userinput"
               />
-          </label>
-          <label class="input">
+          </span>
+        <span class="inputs text--bold">
+          <label name="subject">
+            Ämne: </label>
             <input
               type="text"
               placeholder="Ämne:"
               maxlength="60"
+              name="subject"
               id="sendersubject"
               class="userinput"
               />
-          </label>
-          <label class="freetxt input">
+        </span>
+        <span class="input-column text--bold">
+          <label class="freetxt" 
+          name="message">
+          Meddelande:</label>
             <textarea
               id="sendercomment"
               rows="4"
               cols="1"
+              name="message"
               class="txtuserinput"
               placeholder="Meddelande:"></textarea>
-          </label>
+          </span>
           <button
             type="submit"
             id="submit--contactform"

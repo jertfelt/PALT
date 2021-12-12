@@ -372,7 +372,7 @@ h6 {
 }
 
 .button--black:hover {
-  background: #EEB5B5;
+  background: #ffc5c5;
   color: black;
 }
 
@@ -386,136 +386,6 @@ h6 {
     padding: 22px 90px;
     height: 62px;
   }
-}
-
-.button--if-pressed {
-  background-color: #f4f4f4;
-  border-color: #f4f4f4;
-  color: #282828;
-}
-
-.radiobutton--interactive {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Roboto", Verdana, sans-serif;
-  border-radius: 100px;
-  padding: 1rem;
-  margin: 0%;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.radiobutton--interactive .rad-input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  z-index: -1;
-}
-
-.radiobutton--interactive .rad-design {
-  width: 22px;
-  height: 22px;
-  border-radius: 100px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#f4f4f4), to(black));
-  background: linear-gradient(to right bottom, #f4f4f4, black);
-  position: relative;
-}
-
-.radiobutton--interactive .rad-design::before {
-  content: "";
-  display: inline-block;
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
-  background: #e6e6e6;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.radiobutton--interactive .rad-input:checked + .rad-design::before {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-
-.radiobutton--interactive .rad-text {
-  margin-left: 14px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-weight: 900;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.radiobutton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Roboto", Verdana, sans-serif;
-  border-radius: 100px;
-  padding: 1rem;
-  margin: 0%;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.radiobutton .rad-input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  z-index: -1;
-}
-
-.rad-design {
-  width: 20px;
-  height: 20px;
-  border-radius: 100px;
-  background: #f4f4f4;
-  position: relative;
-}
-
-.rad-design--black {
-  width: 20px;
-  height: 20px;
-  border-radius: 100px;
-  background: black;
-  position: relative;
-}
-
-.rad-design_outline--white {
-  width: 14px;
-  height: 14px;
-  border-radius: 100px;
-  background: none;
-  border-style: solid;
-  border-color: #f4f4f4;
-  position: relative;
-}
-
-.rad-design_outline {
-  width: 14px;
-  height: 14px;
-  border-radius: 100px;
-  background: none;
-  border-style: solid;
-  border-color: black;
-  position: relative;
 }
 
 .userinput_button {
@@ -1025,7 +895,6 @@ body {
   display: block;
   background-color: #f4f4f4;
   z-index: 2;
-  margin-bottom: 1rem;
   width: 100%;
   cursor: pointer;
 }
@@ -1067,7 +936,8 @@ body {
   pointer-events: none;
 }
 
-.input {
+.inputs {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1075,14 +945,111 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.inputs label {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .inputs {
+    letter-spacing: 0.01rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .inputs label {
+    text-align: left;
+    padding-right: 20px;
+  }
+  .inputs input {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .inputs {
+    margin-top: 1rem;
+  }
+  .inputs label {
+    text-align: left;
+    padding-right: 20px;
+  }
+  .inputs input {
+    width: 90%;
+  }
+}
+
+.input-column {
   width: 100%;
-  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input-column label {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .input-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .input-column label {
+    text-align: flex-start;
+    margin: 0 auto;
+    padding-top: 18px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  .input-column label {
+    padding-right: 34px;
+  }
 }
 
 .txtuserinput {
@@ -1416,7 +1383,6 @@ body {
 }
 
 .black__box--about div .statistic--about div p {
-  color: orange;
   margin: 10px 0px;
 }
 
