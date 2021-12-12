@@ -372,13 +372,10 @@ h6 {
 }
 
 .button--black:hover {
-<<<<<<< HEAD
   background: #EEB5B5;
   color: #000000;
-=======
   background: #ffc5c5;
   color: black;
->>>>>>> tova-contact
 }
 
 .button--large {
@@ -393,12 +390,10 @@ h6 {
   }
 }
 
-<<<<<<< HEAD
 .button--if-pressed {
   background-color: #f4f4f4;
   border-color: #f4f4f4;
   color: #282828;
-=======
 .userinput_button {
   width: 100%;
   padding: 12px 55px 15px 15px;
@@ -411,7 +406,6 @@ h6 {
   margin: 1rem;
   border-color: #EEB5B5;
   border-style: solid;
->>>>>>> tova-contact
 }
 
 .link {
@@ -1416,10 +1410,7 @@ body {
 }
 
 .black__box--about div .statistic--about div p {
-<<<<<<< HEAD
   color: #c27e01;
-=======
->>>>>>> tova-contact
   margin: 10px 0px;
 }
 
@@ -2200,7 +2191,6 @@ body {
   width: 80px;
 }
 
-<<<<<<< HEAD
 .footer-container2 .footer-object3 a:hover {
   color: #EEB5B5;
 }
@@ -2330,8 +2320,6 @@ body {
 .container-inner-flex .case-text p {
   color: gray;
   font-size: 13px;
-=======
->>>>>>> 7f5ee9e311083dd283ddfa7c64ae05bdd7efb24b
 .userinput {
   width: 100%;
   padding: 15px;
