@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="styles/sass/img/favicon.ico">
+    <link rel="icon" type="image/png" href="styles/sass/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="styles/sass/img/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="styles/sass/img/apple-touch-icon.png" sizes="144x144">
     <link rel="stylesheet" href="styles/sass/styles.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -98,49 +102,68 @@
               <option id="option-4" value="4">Övrigt</option>
             </select>
           </div>
-          <label class="input"><input
+          <span class="inputs text--bold">
+          <label name="sendername">
+            Namn:    
+          </label>
+            <input
               type="text"
               name="sendername"
               maxlength="60"
               placeholder="Namn:"
-              class="userinput"
+              class="userinput "
               />
+          </span>
+          <span class="inputs text--bold">
+          <label name="name">
+            Mail: 
           </label>
-          <label class="input">
             <input
               type="text"
+              name="mail"
               id="sendermail"
               maxlength="60"
               placeholder="me@example.com"
               class="userinput"
               />
+         </span>
+          <span class="inputs text--bold">
+          <label name="phone">
+            Telefon:
           </label>
-          <label class="input">
             <input
               type="text"
               id="senderphone"
-              placeholder="Telefon:"
+              name="phone"
+              placeholder="+46:"
               pattern="[0-9]+"
               class="userinput"
               />
-          </label>
-          <label class="input">
+          </span>
+        <span class="inputs text--bold">
+          <label name="subject">
+            Ämne: </label>
             <input
               type="text"
               placeholder="Ämne:"
               maxlength="60"
+              name="subject"
               id="sendersubject"
               class="userinput"
               />
-          </label>
-          <label class="freetxt input">
+        </span>
+        <span class="input-column text--bold">
+          <label class="freetxt" 
+          name="message">
+          Meddelande:</label>
             <textarea
               id="sendercomment"
               rows="4"
               cols="1"
+              name="message"
               class="txtuserinput"
               placeholder="Meddelande:"></textarea>
-          </label>
+          </span>
           <button
             type="submit"
             id="submit--contactform"
@@ -183,6 +206,7 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1876.9836648996168!2d14.888163033572676!3d63.39074734112037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466fdb4400fdb645%3A0x2792057bf35c812d!2sPaltv%C3%A4gen%2033%2C%20836%2093%20Lit!5e0!3m2!1ssv!2sse!4v1639038051828!5m2!1ssv!2sse"
             width="800"
             height="600"
+            title ="Interactive Google map"
             name="Google map"
             class="googlemap"
             style="border: 0"
@@ -195,7 +219,7 @@
       <div class="footer-container2 text--white text--xxs text--bold">
         <div class="footer-object1">
           <p>PALT AB</p>
-          <p>paltvägen 33</p>
+          <p>Paltvägen 33</p>
           <p>001 00 Norrland</p>
         </div>
 

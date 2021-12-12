@@ -2,9 +2,19 @@
 <html lang="sv">
 
 	<head>
+
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="styles/sass/img/favicon.ico">
+		<link rel="icon" type="image/png" href="styles/sass/img/favicon-16x16.png"
+			sizes="16x16">
+		<link rel="icon" type="image/png" href="styles/sass/img/favicon-32x32.png"
+			sizes="32x32">
+		<link rel="apple-touch-icon" href="styles/sass/img/apple-touch-icon.png"
+			sizes="144x144">
+		<link rel="stylesheet" href="styles/sass/styles.css" />
+		<link
 		<link rel="stylesheet" href="styles/sass/styles.css" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet" />
@@ -71,7 +81,7 @@
 		</section>
 		<section class="homepage__features">
 			<div class="container">
-				<a href="cases.html" target="_blank">
+				<a href="cases.html">
 					<div class="homepage__feature homepage__feature--cases">
 						<h2 class="text--white">Det här är vad vi gör</h2>
 						<p class="text text--l tex--bold text--white text--cursive">
@@ -102,9 +112,9 @@
 									</div>
 									<p class="text--l text--bold text--white center">Spotify</p>
 									<blockquote class="text--s text--pink text--bold center">
-										PALT hjälpte oss att ta fram en helt ny hemsida och vi är super nöjda
+										"PALT hjälpte oss att ta fram en helt ny hemsida och vi är super nöjda
 										med
-										resultatet.
+										resultatet."
 									</blockquote>
 									<p class="text--s text--white center">VD Spotify</p>
 								</div>
@@ -120,8 +130,8 @@
 									</div>
 									<p class="text--l text--bold text--white center">H&M</p>
 									<blockquote class="text--s text--pink text--bold center">
-										Bra jobb! De är snabba, tydliga och kreativa individer som jag varmt
-										rekommenderar!
+										"Bra jobb! De är snabba, tydliga och kreativa individer som jag varmt
+										rekommenderar!"
 									</blockquote>
 									<p class="text--s text--white center">VD H&M</p>
 								</div>
@@ -137,7 +147,7 @@
 									</div>
 									<p class="text--l text--bold text--white center">Google</p>
 									<blockquote class="text--s text--pink text--bold center">
-										You guys are awesome! You did a better job than Mark Zuckerberg!
+										"You guys are awesome! You did a better job than Mark Zuckerberg!"
 									</blockquote>
 									<p class="text--s text--white center">VD Google</p>
 								</div>
@@ -154,7 +164,7 @@
 		</section>
 		<section class="homepage__features">
 			<div class="container">
-				<a href="about.html" target="_blank">
+				<a href="about.html">
 					<div class="homepage__feature homepage__feature--about">
 						<h2 class="text--white">Det här är vi</h2>
 						<p class="text text--l tex--bold text--cursive text--white">
@@ -222,12 +232,18 @@
 							Hör av dig!
 						</h2>
 						<div class="form-object">
-							<label for="name">Namn</label>
-							<input type="text" name="name" placeholder="Name" class="userinput">
-							<label for="email">E-mail</label>
-							<input type="email" name="email" placeholder="E-mail" class="userinput">
-							<button class="button button--black">Skicka</button>
+							<form action="#" id="form" class="form-object" method="POST">
+								<label for="name">Namn</label>
+								<input type="text" name="name" placeholder="Name" class="userinput"
+									pattern="[a-z]{1,15}" title="Username should only contain lowercase
+									letters. e.g. john" required>
+								<label for="email">E-mail</label>
+								<input type="email" name="email" placeholder="E-mail" class="userinput" required>
+								<button class="button button--black">Skicka</button>
+							</form>
+
 						</div>
+						<p id="log" class="primary--xs text--bold center"></p>
 					</div>
 				</div>
 			</div>
@@ -250,10 +266,10 @@
 					</div>
 				</div>
 				<div class="footer-object3">
-					<a href="index.html"><span class="selected">Hem</span></a>
-					<a href="about.html">Om oss</a>
-					<a href="cases.html">Cases</a>
-					<a href="contact.html">Kontakt</a>
+					<a href="index.html" class="link link--white">Hem</a>
+					<a href="about.html" class="link link--white">Om oss</a>
+					<a href="cases.html" class="link link--white">Cases</a>
+					<a href="contact.html" class="link link--white">Kontakt</a>
 				</div>
 			</div>
 		</footer>

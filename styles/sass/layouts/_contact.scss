@@ -32,7 +32,7 @@ body {
   display: block;
   background-color: $color-background;
   z-index: 2;
-  margin-bottom: 1rem;
+
   width: 100%;
   cursor: pointer;
   select {
@@ -66,12 +66,63 @@ body {
     pointer-events: none;
   }
 }
-.input {
-  @include flexBox(column, center, space-between);
-  width: 100%;
-  margin: 1rem 0;
+.inputs{
+  width:100%;
+  @include flexBox(column, flex-start, space-between);
+  label{
+    margin-bottom:1rem;
+    margin-top:1rem;
+  }
+
+  @include breakpoint(small-max){
+  letter-spacing: 0.01rem;
+  @include flexBox(row, center, space-between);
+  label {
+    text-align:left;
+    padding-right:20px;
+  }
+  margin-top:1rem;
+  input{
+    width:80%;
+  }
+  
+}
+@include breakpoint(medium-tablet-max){
+  label {
+    text-align:left;
+    padding-right:20px;
+  }
+  margin-top:1rem;
+  input{
+    width:90%;
+  }
+  
 }
 
+}
+
+.input-column{
+  width:100%;
+  @include flexBox(column, flex-start, space-between);
+  label{
+    margin-bottom:1rem;
+    margin-top:1rem;
+  }
+  @include breakpoint(small-max){
+  @include flexBox(row, flex-start, space-between);
+  margin-bottom:1rem; 
+  margin-top:1rem;
+  label {
+    text-align:flex-start;
+    margin:0 auto;
+    padding-top:18px;
+    padding-right:20px;
+    @include breakpoint(small-max){
+    padding-right:34px;
+    }
+  }
+}
+}
 .txtuserinput {
   @include font-size(16);
   width: 100%;
