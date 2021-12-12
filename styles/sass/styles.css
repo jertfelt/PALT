@@ -656,85 +656,6 @@ h6 {
   }
 }
 
-.menu-toggle {
-  background: none;
-  border: none;
-  width: 30px;
-  height: 23px;
-  cursor: pointer;
-  display: block;
-  outline: none;
-  position: absolute;
-  right: 30px;
-  top: 32px;
-  padding: 0;
-}
-
-.menu-toggle.menu-open span {
-  background: transparent;
-}
-
-.menu-toggle.menu-open span:before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.menu-toggle.menu-open span:after {
-  bottom: 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-@media only screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-
-.menu-toggle span {
-  position: absolute;
-  right: 0;
-  top: 7px;
-  height: 3px;
-  background: #000000;
-  width: 100%;
-  -webkit-transition: 0.3s all ease-out;
-  transition: 0.3s all ease-out;
-}
-
-.menu-toggle span:before {
-  content: "";
-  top: -7px;
-  height: 3px;
-  background: #000000;
-  position: absolute;
-  width: 100%;
-  right: 0;
-  -webkit-transition: 0.3s all ease-out;
-  transition: 0.3s all ease-out;
-}
-
-.menu-toggle span:after {
-  content: "";
-  bottom: -7px;
-  height: 3px;
-  background: #000000;
-  position: absolute;
-  width: 100%;
-  right: 0;
-  -webkit-transition: 0.3s all ease-out;
-  transition: 0.3s all ease-out;
-}
-
-.menu-toggle.fade-in-nav span:before {
-  background: #000000;
-}
-
-.menu-toggle.fade-in-nav span:after {
-  background: #000000;
-}
-
 .hero__wrap {
   position: relative;
   min-height: 500px;
@@ -847,6 +768,85 @@ h6 {
   .hero__info p {
     margin-bottom: 40px;
   }
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  position: absolute;
+  right: 30px;
+  top: 32px;
+  padding: 0;
+}
+
+.menu-toggle.menu-open span {
+  background: transparent;
+}
+
+.menu-toggle.menu-open span:before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-toggle.menu-open span:after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle span {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  height: 3px;
+  background: #000000;
+  width: 100%;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+.menu-toggle span:before {
+  content: "";
+  top: -7px;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+.menu-toggle span:after {
+  content: "";
+  bottom: -7px;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+.menu-toggle.fade-in-nav span:before {
+  background: #000000;
+}
+
+.menu-toggle.fade-in-nav span:after {
+  background: #000000;
 }
 
 body {
@@ -2220,6 +2220,147 @@ body {
   .footer-container2 .footer-object3 a {
     width: 80px;
   }
+}
+
+.hero__wrap.hero__cases {
+  background-image: url(../sass/img/cases.jpeg);
+}
+
+.container-inner-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0 50px 0;
+  height: 100%;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container-inner-flex .case-container-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container-inner-flex a {
+  -webkit-transition: all ease-in-out 0.9s;
+  transition: all ease-in-out 0.9s;
+}
+
+.container-inner-flex .case-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 280px;
+  width: 280px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.404);
+  background-blend-mode: saturation;
+  background-position: center;
+  border-radius: 4px;
+  -webkit-box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (min-width: 768px) {
+  .container-inner-flex .case-picture {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+.container-inner-flex .case-picture:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.container-inner-flex .case-picture h2 {
+  font-family: "Roboto", Verdana, sans-serif;
+}
+
+.case-picture.spotify {
+  background-image: url(../sass/img/Spotify.jpeg);
+}
+
+.case-picture.hm {
+  background-image: url(../sass/img/H&M.jpeg);
+}
+
+.case-picture.telenor {
+  background-image: url(../sass/img/telenor.png);
+}
+
+.case-picture.ica-banken {
+  background-image: url(../sass/img/ica-bankkort.png);
+}
+
+.case-picture.tv4 {
+  background-image: url(../sass/img/se-tv4-play-utomlands.jpeg);
+}
+
+.case-picture.volvo {
+  background-image: url(../sass/img/Volvo.webp);
+}
+
+.case-picture.nackademin {
+  background-image: url(../sass/img/Nackademin.jpeg);
+}
+
+.container-inner-flex .case-picture.ukk {
+  background-image: url(../sass/img/Om-UKK_Arkitekturen.jpeg);
+}
+
+.case-text {
+  height: 90px;
+  width: 280px;
+}
+
+@media only screen and (min-width: 768px) {
+  .case-text {
+    width: 400px;
+  }
+}
+
+.case-text h3 {
+  font-family: "Roboto", Verdana, sans-serif;
+}
+
+.case-text p {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: #ccc;
 }
 
 .userinput {
