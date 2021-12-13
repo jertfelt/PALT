@@ -102,7 +102,7 @@
             </select>
           </div>
           <span class="inputs text--bold">
-          <label name="sendername">
+          <label for="sendername">
             Namn:    
           </label>
             <input
@@ -110,11 +110,12 @@
               name="sendername"
               maxlength="60"
               placeholder="Namn:"
-              class="userinput "
+              class="userinput"
+              id="sendername"
               />
           </span>
           <span class="inputs text--bold">
-          <label name="name">
+          <label for="sendermail">
             Mail: 
           </label>
             <input
@@ -127,7 +128,7 @@
               />
          </span>
           <span class="inputs text--bold">
-          <label name="phone">
+          <label for="senderphone">
             Telefon:
           </label>
             <input
@@ -140,7 +141,7 @@
               />
           </span>
         <span class="inputs text--bold">
-          <label name="subject">
+          <label for="sendersubject">
             Ämne: </label>
             <input
               type="text"
@@ -153,7 +154,7 @@
         </span>
         <span class="input-column text--bold">
           <label class="freetxt" 
-          name="message">
+          for="sendercomment">
           Meddelande:</label>
             <textarea
               id="sendercomment"
@@ -215,29 +216,6 @@
       </section>
     </main>
 	<footer class="footer">
-		<div class="container">
-			<div class="footer-container1">
-
-				<div class="footer-content text--bold text--black">
-					<h2 class="text--m">
-						Hör av dig!
-					</h2>
-					<div class="form-object">
-						<form action="#" id="form" class="form-object" method="POST">
-							<label for="name">Namn</label>
-							<input type="text" name="name" placeholder="Name" class="userinput" pattern="[a-z]{1,15}"
-								title="Username should only contain lowercase
-									letters. e.g. john" required>
-							<label for="email">E-mail</label>
-							<input type="email" name="email" placeholder="E-mail" class="userinput" required>
-							<button class="button button--black">Skicka</button>
-						</form>
-
-					</div>
-					<p id="log" class="primary--xs text--bold center"></p>
-				</div>
-			</div>
-		</div>
 		<div class="footer-container2 text--white text--xxs text--bold">
 			<div class="container">
 				<div class="footer--black">
