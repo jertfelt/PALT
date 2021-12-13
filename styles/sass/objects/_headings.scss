@@ -40,18 +40,3 @@ h5 {
 h6 {
     @include font-size(16);
 }
-
-
-//pageheader (consists of pageheader-logo + pageheader-primary and then pageheader-text
-
-// .pageheader--primary {
-//   @include font-size(64);
-//   font-family: $font-primary;
-//   line-height: 0.8rem;
-// }
-// .pageheader_text {
-//   @include font-size(36);
-//   font-family: $font-primary;
-//   font-weight: bold;
-//   line-height: 2.4rem;
-// }
