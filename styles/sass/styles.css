@@ -377,7 +377,7 @@ h6 {
 
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-
+}
 .button--large {
   padding: 16px 30px;
   height: auto;
@@ -389,6 +389,11 @@ h6 {
     height: 62px;
   }
 }
+
+.button--if-pressed {
+  background-color: #f4f4f4;
+  border-color: #f4f4f4;
+  color: #282828;}
 
 .userinput_button {
   width: 100%;
@@ -2235,6 +2240,8 @@ body {
   .footer-container2 .footer-object3 a {
     width: 80px;
   }
+.footer-container2 .footer-object3 a:hover {
+  color: #EEB5B5;
 }
 
 .hero__wrap.hero__cases {
@@ -2391,4 +2398,4 @@ body {
   height: 50px;
   border-radius: 5px;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css.map */}
