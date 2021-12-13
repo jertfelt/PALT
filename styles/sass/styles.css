@@ -1112,6 +1112,7 @@ body {
   text-align: center;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  padding-top: 1rem;
 }
 
 #log {
@@ -2087,7 +2088,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 991px) {
@@ -2099,18 +2100,17 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 0;
   }
 }
 
 .footer-container1 .footer-content .form-object input[type="email"] {
-  margin: 20px 0 20px 0;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 991px) {
@@ -2131,7 +2131,29 @@ body {
 }
 
 .footer-container1 .footer-content .form-object label {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 5%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 991px) {
+  .footer-container1 .footer-content .form-object label {
+    margin-left: 50px;
+    text-align: right;
+  }
 }
 
 .footer-container2 {

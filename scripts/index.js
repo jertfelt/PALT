@@ -82,4 +82,10 @@ let form = document.getElementById('form');
 let messageUser = document.getElementById('log');
 form.addEventListener('submit',logSubmit);
 
-
+function logThanks(event) {
+  thanks.textContent = "Tack! Vi hör av oss!";
+  event.preventDefault();
+}
+let formFooter = document.getElementById('form-footer');
+let messageThanks = document.getElementById('thanks');
+form.addEventListener('submit',logSubmit);

@@ -39,12 +39,12 @@
             <a href="/" class="link--white header__logo">
               <img
                 src="styles/sass/img/palt-logo-white.svg"
-                alt="Palt logo"
+                alt="Palt logo white"
                 class="logo--white"
               />
               <img
                 src="styles/sass/img/palt-logo-black.svg"
-                alt="Palt logo"
+                alt="Palt logo black"
                 class="logo--black"
               />
             </a>
@@ -77,7 +77,7 @@
         </nav>
       </div>
     </header>
-    <section class="hero__wrap">
+    <section class="hero__wrap" role="banner" aria-label="Palt homepage background image">
       <div class="container">
         <div class="hero__info">
           <h1 class="text--white">PALT är en digitalbyrå</h1>
@@ -108,7 +108,7 @@
         </a>
       </div>
     </section>
-    <section class="homepage__slider">
+    <section class="homepage__slider" role="slider">
       <div class="container">
         <div class="glide text--altblack">
           <div class="glide__track" data-glide-el="track">
@@ -171,7 +171,7 @@
         </div>
       </div>
     </section>
-    <section class="homepage__features">
+    <section class="homepage__features" role="main">
       <div class="container">
         <a href="about.html" target="_blank">
           <div class="homepage__feature homepage__feature--about">
@@ -180,11 +180,11 @@
               OM OSS
             </p>
             <div class="developer">
-              <img src="styles/sass/img/developer.svg" alt="Developer" />
+              <img src="styles/sass/img/developer.svg" alt="Developer picture" />
               <div class="developer__laptop">
                 <img
                   src="styles/sass/img/laptop.svg"
-                  alt="Laptop"
+                  alt="Laptop picture"
                   class="laptop-animation"
                 />
               </div>
@@ -253,18 +253,23 @@
 						Hör av dig!
 					</h2>
 					<div class="form-object">
-						<form action="#" id="form" class="form-object" method="POST">
-							<label for="name">Namn</label>
-							<input type="text" name="name" placeholder="Name" class="userinput" pattern="[a-z]{1,15}"
-								title="Username should only contain lowercase
-									letters. e.g. john" required>
-							<label for="email">E-mail</label>
-							<input type="email" name="email" placeholder="E-mail" class="userinput" required>
+						<form action="#" 
+						id="form-footer" 
+						class="form-object" 
+						method="POST">
+							<label for="name">Namn: </label>
+							<input type="text" 
+							name="name" 
+							placeholder="Ditt namn här" class="userinput" required id="name">
+							<label for="email">Mail: </label>
+							<input type="email"
+							 name="email" 
+							 placeholder="example@mail.com" 
+							 class="userinput" required id="email">
 							<button class="button button--black">Skicka</button>
 						</form>
-
+						<p id="thanks" class="text--cursive text--black"></p>
 					</div>
-					<p id="log" class="primary--xs text--bold center"></p>
 				</div>
 			</div>
 		</div>

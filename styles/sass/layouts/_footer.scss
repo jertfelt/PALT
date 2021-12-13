@@ -31,21 +31,20 @@
       height: 180px;
     }
 
+    //fixat till med labels här, för tillgängligheten (tova)
     .form-object {
       @include flexBox(column, flex-start, space-between);
       width: 100%;
-      margin-top: 20px;
+      margin-top: 10px;
       @include breakpoint(medium-tablet-max) {
-        @include flexBox(row, flex-start, center);
-        margin-top: 0;
+        @include flexBox(row, center, center);
       }
       input[type="email"] {
-        margin: 20px 0 20px 0;
+        margin-bottom:20px;
         @include breakpoint(medium-tablet-max) {
           margin: 0 0 0 10px;
         }
       }
-
       button {
         width: 100%;
         margin-left: 0;
@@ -54,7 +53,14 @@
         }
       }
       label {
-        display: none;
+        @include flexBox(row, center, space-between);
+        min-width:5%;
+        margin-bottom:10px;  
+        margin-top:10px;
+        @include breakpoint(medium-tablet-max) {
+        margin-left: 50px;
+        text-align:right;
+        }
       }
     }
   }
