@@ -374,7 +374,9 @@ h6 {
 .button--black:hover {
   background: #ffc5c5;
   color: #000000;
-}
+
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 
 .button--large {
   padding: 16px 30px;
@@ -959,6 +961,7 @@ body {
 
 .inputs {
   width: 100%;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -979,6 +982,10 @@ body {
   margin-top: 1rem;
 }
 
+.inputs .userinput {
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .inputs {
     letter-spacing: 0.01rem;
@@ -995,27 +1002,35 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 1rem;
   }
   .inputs label {
+    min-width: 12%;
     text-align: left;
     padding-right: 20px;
-  }
-  .inputs input {
-    width: 80%;
   }
 }
 
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 1290px) {
   .inputs {
-    margin-top: 1rem;
+    letter-spacing: 0.02rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .inputs label {
+    min-width: 10%;
     text-align: left;
     padding-right: 20px;
-  }
-  .inputs input {
-    width: 90%;
   }
 }
 
@@ -1037,6 +1052,7 @@ body {
 }
 
 .input-column label {
+  min-width: 10%;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -1060,10 +1076,9 @@ body {
     margin-top: 1rem;
   }
   .input-column label {
+    min-width: 10%;
     text-align: flex-start;
     margin: 0 auto;
-    padding-top: 18px;
-    padding-right: 20px;
   }
 }
 
@@ -1109,8 +1124,6 @@ body {
 
 .picture-info {
   background-color: #000000;
-  padding-bottom: 1rem;
-  height: auto;
 }
 
 .picture-info img {
@@ -1144,9 +1157,11 @@ body {
 }
 
 @media only screen and (min-width: 991px) {
+  .picture-info {
+    max-height: 300px;
+  }
   .picture-info img {
     width: 70%;
-    max-height: 300px;
   }
 }
 

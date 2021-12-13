@@ -49,7 +49,14 @@ $screen-xl: 1450px;
     @media only screen and (max-width: $screen-lg) {
       @content;
     }
-  } @else if $canvas==extra-large-max {
+  }
+  @else if $canvas==large-min {
+    @media only screen and (min-width: $screen-lg){
+      @content;
+    }
+  }
+  
+  @else if $canvas==extra-large-max {
     @media only screen and (max-width: $screen-xl) {
       @content;
     }
