@@ -374,8 +374,6 @@ h6 {
 .button--black:hover {
   background: #ffc5c5;
   color: #000000;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .button--large {
@@ -2397,7 +2395,7 @@ body {
 .case-text p {
   font-size: 13px;
   font-size: 0.8125rem;
-  color: #ccc;
+  color: #505050;
 }
 
 .userinput {

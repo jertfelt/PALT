@@ -44,18 +44,15 @@
 .case-picture.spotify {
   background-image: url(../sass/img/Spotify.jpeg);
 }
-
 .case-picture.hm {
   background-image: url(../sass/img/H&M.jpeg);
 }
-
 .case-picture.telenor {
   background-image: url(../sass/img/telenor.png);
 }
 .case-picture.ica-banken {
   background-image: url(../sass/img/ica-bankkort.png);
 }
-
 .case-picture.tv4 {
   background-image: url(../sass/img/se-tv4-play-utomlands.jpeg);
 }
@@ -65,7 +62,6 @@
 .case-picture.nackademin {
   background-image: url(../sass/img/Nackademin.jpeg);
 }
-
 .container-inner-flex .case-picture.ukk {
   background-image: url(../sass/img/Om-UKK_Arkitekturen.jpeg);
 }
@@ -77,14 +73,12 @@
       width: 400px;
 }
 }
-
 .case-text h3 {
   font-family: $font-primary;
 }
-
 .case-text p {
   @include font-size(13);
-  color: $color-grey;
+  color: $color-case-text;
 }
 
 
