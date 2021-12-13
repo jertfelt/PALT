@@ -374,9 +374,9 @@ h6 {
 .button--black:hover {
   background: #ffc5c5;
   color: #000000;
-
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
 
 .button--large {
   padding: 16px 30px;

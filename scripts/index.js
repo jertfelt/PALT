@@ -47,16 +47,17 @@ function Menu () {
 Menu();
 
 //Active sub-pages
-( function () {
-	const current_path = location.pathname.split( '/' )[1];
-	if ( current_path === "" ) return;
-	const menuItems = document.querySelectorAll( '.main-menu li a' );
-	menuItems.forEach( item => {
-		if ( item.getAttribute( "href" ).indexOf( current_path ) !== -1 ) {
-			item.className += " is-active";
-		}
-	} )
-} )();
+// ( function () {
+// 	const current_path = location.pathname.split( '/' )[1];
+// 	if ( current_path === "" ) return;
+// 	const menuItems = document.querySelectorAll( '.main-menu li a' );
+// 	menuItems.forEach( item => {
+// 		if ( item.getAttribute( "href" ).indexOf( current_path ) !== -1 ) {
+// 			item.className += " is-active";
+// 		}
+// 	} )
+// } )();
+
 
 	function flippedCard () {
 	const card = document.querySelectorAll(".card");
