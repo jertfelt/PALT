@@ -98,7 +98,6 @@ label {
  }}
 } 
 
-
 .input-column{
   width:100%;
   @include flexBox(column, flex-start, space-between);
@@ -140,6 +139,7 @@ label {
   padding: 15px;
   text-align: center;
   flex-basis: 100%;
+  padding-top:1rem;
 }
 #log {
   padding-top: 1rem;

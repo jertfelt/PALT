@@ -81,4 +81,3 @@ let form = document.getElementById('form');
 let messageUser = document.getElementById('log');
 form.addEventListener('submit',logSubmit);
 
-
