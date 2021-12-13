@@ -31,6 +31,27 @@
       left: 0;
       background-color: rgba($color-black, 0.5);
     }
+
+    //Cases background image	  
+    &.hero__cases{
+      background-image: url(../sass/img/cases.jpeg);
+       }  
+       @include breakpoint(small-max) {
+         min-height: 600px;
+       padding: 0 20px;
+       }
+       &:before {
+         content: " ";
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         background-color: rgba($color-black, 0.5);
+       }
+   
+
+
     
   //Contact background image
     &.hero__contact{
@@ -50,8 +71,6 @@
       }
     }
   }
-
-
   &__info {
     position: relative;
     width: 100%;

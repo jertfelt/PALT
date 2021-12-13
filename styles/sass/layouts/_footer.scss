@@ -4,6 +4,18 @@
   @include breakpoint(medium-tablet-max) {
    margin-top: 50px;
   }
+
+  &--black {
+    @include flexBox(row, flex-start, flex-start);
+    height: auto;
+    padding: 20px;
+    @include breakpoint(medium-tablet-max) {
+    @include flexBox(row, center, flex-start);
+    height: 200px;
+    padding: 0 20px;
+  }
+
+  }
 }
 .footer-container1 {
   @include flexBox(row, flex-start, center);
@@ -48,17 +60,14 @@
   }
 }
 .footer-container2 {
-  @include flexBox(row, center, flex-start);
-  height: 200px;
+
   background-color: $color-black;
 
   .footer-object1 {
-    @include flexBox(column, center, flex-start);
-    text-align: left;
+    @include flexBox(column, left, flex-start);
     flex-basis: 100%;
     p {
       display: block;
-      width: 150px;
       padding: 2px;
     }
   }
@@ -79,16 +88,23 @@
         i {
           padding: 3px;
           height: 100%;
+          @include font-size(30);
+          @include breakpoint(medium-tablet-max) {
+           @include font-size(40);
+          }
         }
       }
     }
   }
   .footer-object3 {
-    @include flexBox(column, center, flex-start);
+    @include flexBox(column, flex-end, flex-start);
     flex-basis: 100%;
     a {
       display: block;
-      width: 80px;
+      width: auto;
+       @include breakpoint(medium-tablet-max) {
+         width: 80px;
+        }
     }
   }
 }
