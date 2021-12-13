@@ -1,0 +1,91 @@
+//Add Leonas styles for cases
+.hero__wrap.hero__cases {
+  background-image: url(../sass/img/cases.jpeg);
+}
+
+.container-inner-flex {
+  @include flexBox(row, center, center);
+  margin: 50px 0 50px 0;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  .case-container-wrapper {
+    @include flexBox(column, center, space-around);
+  }
+  a {
+    transition: all ease-in-out 0.9s;
+  }
+  .case-picture {
+    @include flexBox(column, center, center);
+    height: 280px;
+    width: 280px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba($color-black, 0.404);
+    background-blend-mode: saturation;
+    background-position: center;
+    border-radius: 4px;
+    box-shadow: 3px 3px 2px 2px rgba($color-black, 0.6);
+	   @include breakpoint(small-max) {
+      width: 400px;
+	  height: 300px;
+}
+    &:hover {
+      transform: scale(1.01);
+    }
+
+    h2 {
+      font-family: $font-primary;
+    }
+  }
+}
+
+.case-picture.spotify {
+  background-image: url(../sass/img/Spotify.jpeg);
+}
+
+.case-picture.hm {
+  background-image: url(../sass/img/H&M.jpeg);
+}
+
+.case-picture.telenor {
+  background-image: url(../sass/img/telenor.png);
+}
+.case-picture.ica-banken {
+  background-image: url(../sass/img/ica-bankkort.png);
+}
+
+.case-picture.tv4 {
+  background-image: url(../sass/img/se-tv4-play-utomlands.jpeg);
+}
+.case-picture.volvo {
+  background-image: url(../sass/img/Volvo.webp);
+}
+.case-picture.nackademin {
+  background-image: url(../sass/img/Nackademin.jpeg);
+}
+
+.container-inner-flex .case-picture.ukk {
+  background-image: url(../sass/img/Om-UKK_Arkitekturen.jpeg);
+}
+
+.case-text {
+  height: 90px;
+  width: 280px;
+   @include breakpoint(small-max) {
+      width: 400px;
+}
+}
+
+.case-text h3 {
+  font-family: $font-primary;
+}
+
+.case-text p {
+  @include font-size(13);
+  color: $color-grey;
+}
+
+
+
