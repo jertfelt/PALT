@@ -1495,7 +1495,7 @@ body {
 
 .pink__box--about div .card {
   height: 400px;
-  width: 70%;
+  width: 85%;
   margin: 20px;
   cursor: pointer;
 }
@@ -2113,7 +2113,7 @@ body {
 
 @media only screen and (min-width: 991px) {
   .footer-container1 .footer-content .form-object input[type="email"] {
-    margin: 0 0 0 10px;
+    margin: 0;
   }
 }
 
@@ -2125,6 +2125,12 @@ body {
 @media only screen and (min-width: 991px) {
   .footer-container1 .footer-content .form-object button {
     margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .footer-container1 .footer-content .form-object input#name {
+    margin-right: 20px;
   }
 }
 
@@ -2149,7 +2155,7 @@ body {
 
 @media only screen and (min-width: 991px) {
   .footer-container1 .footer-content .form-object label {
-    margin-left: 50px;
+    margin-left: 0;
     text-align: right;
   }
 }

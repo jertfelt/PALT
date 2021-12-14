@@ -42,7 +42,7 @@
       input[type="email"] {
         margin-bottom:20px;
         @include breakpoint(medium-tablet-max) {
-          margin: 0 0 0 10px;
+          margin: 0;
         }
       }
       button {
@@ -52,13 +52,18 @@
           margin-left: 10px;
         }
       }
+      input#name{
+       @include breakpoint(medium-tablet-max) {
+          margin-right: 20px;
+        }
+      }
       label {
         @include flexBox(row, center, space-between);
         min-width:5%;
         margin-bottom:10px;  
         margin-top:10px;
         @include breakpoint(medium-tablet-max) {
-        margin-left: 50px;
+        margin-left: 0;
         text-align:right;
         }
       }
